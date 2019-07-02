@@ -1,4 +1,4 @@
-# COMP116 Week1 - Networks
+# Week 1 - An Introduction to Cyber Security
 
 ## Definitions
 __Cyber Security__: The CIA Triad
@@ -47,4 +47,35 @@ __Zero day__: An undisclosed vulnerability that attackers can exploit
 
 
 ## Thinking Like An Attacker - What Are Your Goals?
+- Preventing communications
+- Stealing information
+- Disrupting operations
+- Inserting information
+- Destroying information
+- Gaining and maintaining access to systems
+- Monitoring people
+- Challening adversaries / pinpointing weaknesses
+- For fun
+- For profit
+- Spread propaganda
+- Building a blueprint of weaknesses
 
+
+## Thinking Like An Attacker - Why Attack? 
+- Implicit trust relationships
+- Data is valuable
+- Convenience of digitalization
+- Convenience from internet usage and from data sharing
+- Lack of cyber education
+- No barriers to entry
+- Lack of deterrence
+- Software vulnerabilities
+- Misconfigurations
+- Human elements / social engineering
+- Scapegoating
+
+
+## The Trinity of Trouble - Why Are Cyber Threats Increasing?
+1. Increasing Connectivity
+2. Increasing Extensibility
+3. Increasing Complexity
