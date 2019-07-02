@@ -1,49 +1,49 @@
 # COMP116 Week1 - Networks
 
 ## Definitions
-*Cyber Security*: The CIA Triad
+__Cyber Security__: The CIA Triad
 - Confidentiality
 - Integrity
 - Availability
 
-*Event*: Could be anything
+__Event__: Could be anything
 
-*Incident*: A malicious event
+__Incident__: A malicious event
 
-*Bug*: An error that exists in the implementation-level
+__Bug__: An error that exists in the implementation-level
 - Only exists in source code
 - Very correctable
 
-*Flaw*: An error at a level deeper than implementation
+__Flaw__: An error at a level deeper than implementation
 - Likely exists at the code level
 - Likely to be result of a design error
 - Can be difficult and costly to correct
 
-*Hacker*: A creative programmer (positive connotation)
+__Hacker__: A creative programmer (positive connotation)
 
-*Attacker*: What the media calls a "hacker" (negative connotation)
+__Attacker__: What the media calls a "hacker" (negative connotation)
 - AKA Cracker
 
-*Black hat*: An attacker with malicious intents
+__Black hat__: An attacker with malicious intents
 
-*White hat*: An attacker with good intents
+__White hat__: An attacker with good intents
 
-*Gray hat*: An attacker with good and bad intents
+__Gray hat__: An attacker with good and bad intents
 
-*Script kiddie*: Hacker wannabes who use scripts and exploits written by others without understanding how they work
+__Script kiddie__: Hacker wannabes who use scripts and exploits written by others without understanding how they work
 - AKA skiddie
 
-*Vulnerability*: A security bug; a weakness that can be exploited
+__Vulnerability__: A security bug; a weakness that can be exploited
 
-*Exploiting*: The act of taking advantage of a vulnerability
+__Exploiting__: The act of taking advantage of a vulnerability
 
-*Risk*: The likelihood that an attacker would exploit a vulnerability
+__Risk__: The likelihood that an attacker would exploit a vulnerability
 
-*Threat*: The likelihood that an incident will happen
+__Threat__: The likelihood that an incident will happen
 
-*pwn3d*: Successful exploitation
+__pwn3d__: Successful exploitation
 
-*Zero day*: An undisclosed vulnerability that attackers can exploit
+__Zero day__: An undisclosed vulnerability that attackers can exploit
 
 
 ## Thinking Like An Attacker - What Are Your Goals?
