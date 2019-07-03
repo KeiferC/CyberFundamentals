@@ -75,8 +75,8 @@
 ### The Two Types of Networks
 1. __Unswitched__: Packets flow through all devices on the network, but you only
 look at the packets addressed to you
-2. __Switched__: Packets are directed to the addressed devices
-  - Most common type of network today
+2. __Switched__: Packets are directed to the addressed devices (most commonly
+used today)
   - Note: in regards to internet systems, switched networks refer to
     packet-switched networks in which information is sent in packets and are
     ordered at the endpoints. In circuit-switched networks, electronic
@@ -84,10 +84,18 @@ look at the packets addressed to you
 
 
 ## The OSI Model
-- TODO
+- __Open Systems Interconnection (OSI)__: A standard model for packet-based
+  networks. Contains 7 layers of abstraction from the hardware level to the application
+  level
 
 ### The Seven Layers of the OSI Model
-- TODO
+1. __Physical__:
+2. __Data Link__:
+3. __Network__:
+4. __Transport__:
+5. __Session__:
+6. __Presentation__:
+7. __Application__:
 
 ### The Application Layer
 #### Domain Name Systems (DNS)
