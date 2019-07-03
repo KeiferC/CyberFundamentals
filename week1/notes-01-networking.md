@@ -49,12 +49,38 @@
   - As distinct from a service instance endpoint (aka session ID)
   - Represented as a number
 
+- __Packet__: a unit of data
+  - A data stream (e.g. video, web page, etc.) is comprised of many packets
+  - In general a packet contains
+    - Source and destination IP addresses (in IP layer)
+    - Source and destination port numbers (in TCP layer)
+    - MAC address (in Data Link layer)
+    - Time To Live (TTL; in IP layer)
+    - Payload
+
+- __.pcap__: a common file extension for packet captures
+  - Is commonly used in apps like Wireshark, ettercap, and tcpdump
+  - A 100 mb PCAP file contains tens of thousands of packets
+
+- __Network sniffing__: looking at network traffic and analyzing packets
+  - Most traffic on a network is still in plaintext
+  - Uses of network sniffing
+    - Troubleshoot networking issues
+    - Record communications
+    - Catch sensitive information
+
 ### The TCP Three-Way Handshake
 ![Diagram depicting the TCP Three-Way Handshake](./media/3-way-handshake.png)
 
 ### The Two Types of Networks
-1. __Unswitched__: TODO
-2. __Switched__: TODO
+1. __Unswitched__: Packets flow through all devices on the network, but you only
+look at the packets addressed to you
+2. __Switched__: Packets are directed to the addressed devices
+  - Most common type of network today
+  - Note: in regards to internet systems, switched networks refer to
+    packet-switched networks in which information is sent in packets and are
+    ordered at the endpoints. In circuit-switched networks, electronic
+    information travels through circuits and are directed with physical switches
 
 
 ## The OSI Model
