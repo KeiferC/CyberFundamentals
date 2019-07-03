@@ -29,16 +29,16 @@
 - __Networking__: Two or more computers talking to each other
 
 - __Client__: A program running on a personal computer 
-        - E.g. Web browser
+  - E.g. Web browser
 
 - __Server__: A computer running web server software on a remote computer 
-        - Delivers information to other clients
-        - E.g. Apache HTTP Server
+  - Delivers information to other clients
+  - E.g. Apache HTTP Server
 
 - __Internet__: The world's largest computer network
 
 - __World Wide Web__: A collection of web sites, pages, and content
-        - AKA the "web"
+  - AKA the "web"
 
 - __Localhost__: home; this computer
 
@@ -46,8 +46,8 @@
   context of a particular TCP connection or of a listening state
 
 - __Port__: a virtualization indentifier defining a service endpoint
-        - As distinct from a service instance endpoint (aka session ID)
-        - Represented as a number
+  - As distinct from a service instance endpoint (aka session ID)
+  - Represented as a number
 
 ### The TCP Three-Way Handshake
 ![Diagram depicting the TCP Three-Way Handshake](./media/3-way-handshake.png)
