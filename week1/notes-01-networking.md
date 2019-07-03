@@ -15,29 +15,36 @@
 - Direction of strike
 - etc.
 
-### What Is Cyber Attribution a Mess?
-- Often no physical action to observe?
+### Why Is Cyber Attribution a Mess?
+- Often no physical action to observe
 - Tools to cover tracks
 - Source hopping
 - Lack of effective tools / processes for determining attribution
-- Ethical and legal questions about approaching attribution problems?
+- Ethical and legal questions about approaching cyber attribution
 
 
 ## What Is Networking?
 
 ### Definitions
 - __Networking__: Two or more computers talking to each other
-- __Client__: A program running on a personal computer
+
+- __Client__: A program running on a personal computer 
         - E.g. Web browser
-- __Server__: A computer running web server software on a remote computer
+
+- __Server__: A computer running web server software on a remote computer 
         - Delivers information to other clients
         - E.g. Apache HTTP Server
+
 - __Internet__: The world's largest computer network
+
 - __World Wide Web__: A collection of web sites, pages, and content
         - AKA the "web"
+
 - __Localhost__: home; this computer
+
 - __Socket__: an endpoint instance defined by an IP address and a port in the
   context of a particular TCP connection or of a listening state
+
 - __Port__: a virtualization indentifier defining a service endpoint
         - As distinct from a service instance endpoint (aka session ID)
         - Represented as a number
