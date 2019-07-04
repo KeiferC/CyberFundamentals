@@ -141,26 +141,30 @@ streams of bytes between apps running on hosts communicating via an IP network
 - A TCP segment is encapsulated in an IP datagram and then is exchanged with
   peers
 
-#### TCP Header
+*TCP Header*
 ![Diagram depicting the TCP header](./media/tcp-header.png)
 
-__User Datagram Protocol (UDP)__: TODO
-- TODO
+__User Datagram Protocol (UDP)__: Provides a connectionless, unreliable, 
+fast, best-effort datagram delivery service
+- Relies on IP to provide service
+- No handshaking
+- No sequence numbers
+- Usage includes DNS, streaming videos, and games
 
-#### UDP Header
+*UDP Header*
 ![Diagram depicting the UDP header](./media/udp-header.png)
 
 ### The Network Layer
 __Internet Protocol (IP)__: TODO
 - TODO
 
-#### IPv4 Header
+*IPv4 Header*
 ![Diagram depicting the IPv4 header](./media/ipv4-header.png)
 
 __Internet Control Message Protocol (ICMP)__: TODO
 - TODO
 
-#### ICMP Header
+*ICMP Header*
 ![Diagram depicting the ICMP header](./media/icmp-header.png)
 
 ### The Data Link Layer
