@@ -192,8 +192,39 @@ determine network information
 ![Diagram depicting the ICMP header](./media/icmp-header.png)
 
 ### The Data Link Layer
-__Ethernet__: TODO
-- TODO
+__Ethernet__: Controls how data is trasmitted over a local area network (LAN)
+- __Media Access Control (MAC) address__: A unique identifier assigned to
+  network interfaces for communications at the data link layer
+  - 48 bits in the format XX:XX:XX:XX:XX:XX
+  - Can think about it as the address of the specific device connected to the
+    network 
+
+```bash
+# Bash function for spoofing a Unix-based computer's MAC address
+function spoofMAC # Note: first octet has to be even
+{
+	OLD=$(ifconfig en1 | grep 'ether' | cut -c 8-24)
+	NEW=$(openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//')
+	FIRST_OCTET=$((16#${NEW%%:*}))
+
+	while [ $(($FIRST_OCTET % 2)) != 0 ] # if first octet is odd
+	do
+		NEW=$(openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//')
+		FIRST_OCTET=$((16#${NEW%%:*}))
+	done
+
+	echo # Formatting newline
+	printf "Old MAC Address:	%s\n" $OLD
+	printf "New MAC Address:        %s\n" $NEW
+	echo "Spoofing..."
+
+	sudo ifconfig en1 ether $NEW
+
+	CURR=$(ifconfig en1 | grep 'ether' | cut -c 8-24)
+	printf "Current MAC Address:	%s\n" $CURR
+	echo # Formatting newline
+}
+```
 
 __Address Resolution Protocol__: TODO
 - TODO
