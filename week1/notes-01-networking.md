@@ -6,7 +6,8 @@
 
 
 ## The Cyber Attribution Problem
-__Attribution__: the action of regarding something as being cause by a person or a thing
+__Attribution__: the action of regarding something as being caused by a person
+or a thing
 
 ### Tradtional Warfare - How Do you Attribute an Act of War?
 - Uniform of attackers
@@ -41,7 +42,7 @@ __Attribution__: the action of regarding something as being cause by a person or
 
 - __Localhost__: home; this computer
 
-- __Socket__: an endpoint instance defined by an IP address and a port in the
+- __Socket__: an endpoint instance defined by an IP address and a port in the 
   context of a particular TCP connection or of a listening state
 
 - __Port__: a virtualization indentifier defining a service endpoint
@@ -72,10 +73,10 @@ __Attribution__: the action of regarding something as being cause by a person or
 ![Diagram depicting the TCP Three-Way Handshake](./media/3-way-handshake.png)
 
 ### The Two Types of Networks
-1. __Unswitched__: Packets flow through all devices on the network, but you only
-look at the packets addressed to you
-2. __Switched__: Packets are directed to the addressed devices (most commonly
-used today)
+1. __Unswitched__: Packets flow through all devices on the network, but you only 
+  look at the packets addressed to you
+2. __Switched__: Packets are directed to the addressed devices (most commonly 
+  used today)
   - Note: in regards to internet systems, switched networks refer to
     packet-switched networks in which information is sent in packets and are
     ordered at the endpoints. In circuit-switched networks, electronic
@@ -83,7 +84,9 @@ used today)
 
 
 ## The OSI Model
-__Open Systems Interconnection (OSI)__: A standard model for packet-based networks. Contains 7 layers of abstraction from the hardware level to the application level
+__Open Systems Interconnection (OSI)__: A standard model for packet-based 
+networks. Contains 7 layers of abstraction from the hardware level to the 
+application level
 
 ### The Seven Layers of the OSI Model
 1. __Physical__: Lowest level; communicates bit streams over a physical medium 
@@ -98,15 +101,15 @@ __Open Systems Interconnection (OSI)__: A standard model for packet-based networ
   - Delivery is *not* guaranteed
   - E.g. IP, ICMP
 
-4. __Transport__: Provides transparent and reliable data transfer between
-systems, including acknowledgement and segmentation
+4. __Transport__: Provides transparent and reliable data transfer between 
+  systems, including acknowledgement and segmentation
   - E.g. TCP, UDP
 
-5. __Session__: Establishes and maintains connections between network
-applications
+5. __Session__: Establishes and maintains connections between network 
+  applications
 
-6. __Presentation__: Represents data and allows for processes such as encryption
-and data compression
+6. __Presentation__: Represents data and allows for processes such as encryption 
+  and data compression
   - E.g. XML
 
 7. __Application__: Highest level; are the services one uses on the Internet
@@ -114,35 +117,40 @@ and data compression
 ![Diagram representing the OSI model](./media/osi-model.png)
 
 ### The Application Layer
-#### Domain Name Systems (DNS)
 __Domain Name Systems (DNS)__: A telephone book for the Internet; maps IP
 addresses to domain names and vice versa 
-- TODO
+- Name space is hierarchically divided in domains
+- Each domain is managed by a name server (responsible for mapping names in a
+  zone)
+- Root servers are associated with the top of the hierarchy and dispatch queries
+  to the appropriate domains
+- If a server cannot answer a query, it directly forwards the query up in the
+  hierarchy
+- Results are maintained in a local cache for a limited time
+- Queries can be recursive
+- DNS mainly uses UDP
+- DNS sometimes uses TCP for long queries and zone transfers between servers
+  (port 53)
+- Tools: `dig`, `host`, `nslookup`
 
 ### The Transport Layer
-#### Transport Control Protocol (TCP)
 __Transport Control Protocol (TCP)__: TODO
 - TODO
 
-#### User Datagram Protocol (UDP)
 __User Datagram Protocol (UDP)__: TODO
 - TODO
 
 ### The Network Layer
-#### Internet Protocol (IP)
 __Internet Protocol (IP)__: TODO
 - TODO
 
-#### Internet Control Message Protocol (ICMP)
 __Internet Control Message Protocol (ICMP)__: TODO
 - TODO
 
 ### The Data Link Layer
-#### Ethernet
 __Ethernet__: TODO
 - TODO
 
-#### Address Resolution Protocol (ARP)
 __Address Resolution Protocol__: TODO
 - TODO
 
