@@ -65,7 +65,7 @@ or a thing
 
 - __Packet__: a unit of data
   - A data stream (e.g. video, web page, etc.) is comprised of many packets
-  - In general a packet contains
+  - In general, a packet contains
     - Source and destination IP addresses (in IP layer)
     - Source and destination port numbers (in TCP layer)
     - MAC address (in Data Link layer)
@@ -91,10 +91,10 @@ or a thing
   look at the packets addressed to you
 2. __Switched__: Packets are directed to the addressed devices (most commonly 
   used today)
-  - Note: in regards to internet systems, switched networks refer to
-    packet-switched networks in which information is sent in packets and are
+  - Note: in regards to Internet systems, switched networks refer to
+    packet-switched networks in which information are sent in packets and are
     ordered at the endpoints. In circuit-switched networks, electronic
-    information travels through circuits and are directed with physical switches
+    information travel through circuits and are directed with physical switches
 
 
 ## The OSI Model
@@ -134,66 +134,6 @@ one uses on the Internet
     - e.g. HTTP, DNS, FTP, SMTP, POP3
 
 ![Diagram representing the OSI model](./media/osi-model.png)
-
-### The Application Layer
-__Domain Name Systems (DNS)__: A telephone book for the Internet; maps IP
-addresses to domain names and vice versa 
-- Name space is hierarchically divided in domains
-- Each domain is managed by a name server (responsible for mapping names in a
-  zone)
-- Root servers are associated with the top of the hierarchy and dispatch queries
-  to the appropriate domains
-- If a server cannot answer a query, it directly forwards the query up in the
-  hierarchy
-- Results are maintained in a local cache for a limited time
-- Queries can be recursive
-- DNS mainly uses UDP
-- DNS sometimes uses TCP for long queries and zone transfers between servers
-  (port 53)
-- Tools: `dig`, `host`, `nslookup`
-
-### The Transport Layer
-__Transport Control Protocol (TCP)__: Provides reliable, ordered, error-checked
-streams of bytes between apps running on hosts communicating via an IP network
-- TCP divides a data stream into chunks and adds a TCP header, creating a TCP
-  segment
-- A TCP segment is encapsulated in an IP datagram and then is exchanged with
-  peers
-
-*TCP Header*
-![Diagram depicting the TCP header](./media/tcp-header.png)
-
-__User Datagram Protocol (UDP)__: Provides connectionless, unreliable, 
-fast, best-effort streams of bytes between apps running on hosts communicating
-via an IP network
-- UDP divides a data stream into chunks and adds a UDP header, creating a
-  datagram suitable for transmission via an IP network
-- No handshaking
-- No sequence numbers, therefore ordered delivery is not guaranteed
-- Usage includes DNS, streaming videos, and games
-
-*UDP Header*
-![Diagram depicting the UDP header](./media/udp-header.png)
-
-### The Network Layer
-__Internet Protocol (IP)__: Provides a connectionless, unreliable, best-effort
-datagram delivery service
-- Delivery, integrity, ordering, non-duplication, and bandwidth no guaranteed
-
-*IPv4 Header*
-![Diagram depicting the IPv4 header](./media/ipv4-header.png)
-
-__Internet Control Message Protocol (ICMP)__: Provides a debugging service to
-determine network information
-- Usage includes determining remote host reachability, informing traffic
-  overloads, obtaining network masks at boot time for diskless systems,
-  synchronizing clocks, etc.
-- Exchanges control and error messages about the delivery of IP datagrams
-  - Messages include `ECHO_REQUEST`, `ECHO_REPLY`, `ICMP_MASKREQ` 
-- `ping`: A utility used to send `ICMP ECHO_REQUEST` packets to network hosts
-
-*ICMP Header*
-![Diagram depicting the ICMP header](./media/icmp-header.png)
 
 ### The Data Link Layer
 __Ethernet__: Controls how data is trasmitted over a local area network (LAN)
@@ -237,15 +177,77 @@ function spoofMAC # Note: first octet has to be even
 ```
 
 __Address Resolution Protocol__: Determines the MAC address of the device with
-the specified IP address using a request-response process 
+the given specified IP address using a request-response process 
 - e.g. "Who on this connection has the following MAC address?"
 - Tools: `arp`
 
+### The Network Layer
+__Internet Protocol (IP)__: Provides a connectionless, unreliable, best-effort
+datagram delivery service
+- Delivery, integrity, ordering, non-duplication, and bandwidth not guaranteed
+
+*IPv4 Header*
+![Diagram depicting the IPv4 header](./media/ipv4-header.png)
+
+__Internet Control Message Protocol (ICMP)__: Provides a debugging service to
+determine network information
+- Usage includes determining remote host reachability, informing about traffic
+  overloads, obtaining network masks at boot time for diskless systems,
+  synchronizing clocks, etc.
+- Exchanges control and error messages about the delivery of IP datagrams
+  - Messages include `ECHO_REQUEST`, `ECHO_REPLY`, `ICMP_MASKREQ` 
+- `ping`: A utility used to send `ICMP ECHO_REQUEST` packets to network hosts
+
+*ICMP Header*
+![Diagram depicting the ICMP header](./media/icmp-header.png)
+
+### The Transport Layer
+__Transport Control Protocol (TCP)__: Provides reliable, ordered, error-checked
+streams of bytes between apps running on hosts communicating via an IP network
+- TCP divides a data stream into chunks and adds a TCP header, creating a TCP
+  segment
+- A TCP segment is encapsulated in an IP datagram and then is exchanged with
+  peers
+
+*TCP Header*
+![Diagram depicting the TCP header](./media/tcp-header.png)
+
+__User Datagram Protocol (UDP)__: Provides connectionless, unreliable, 
+fast, best-effort streams of bytes between apps running on hosts communicating
+via an IP network
+- UDP divides a data stream into chunks and adds a UDP header, creating a
+  datagram suitable for transmission via an IP network
+- No handshaking
+- No sequence numbers, therefore ordered delivery is not guaranteed
+- Usage includes DNS, streaming videos, and games
+
+*UDP Header*
+![Diagram depicting the UDP header](./media/udp-header.png)
+
+### The Application Layer
+__Domain Name Systems (DNS)__: A telephone book for the Internet; maps IP
+addresses to domain names and vice versa 
+- Name space is hierarchically divided in domains
+- Each domain is managed by a name server (responsible for mapping names in a
+  zone)
+- Root servers are associated with the top of the hierarchy and dispatch queries
+  to the appropriate domains
+- If a server cannot answer a query, it directly forwards the query up the
+  hierarchy
+- Results are maintained in a local cache for a limited time
+- Queries can be recursive
+- DNS mainly uses UDP
+- DNS sometimes uses TCP for long queries and zone transfers between servers
+  (port 53)
+- Tools: `dig`, `host`, `nslookup`
+
+*DNS Tree*
+![Diagram of the DNS hiearchy](./media/dns-tree.png)
 
 ## The Internet Protocol Suite - TCP/IP Model
 __Internet Protocol Suite__: AKA TCP/IP, the Internet Protocol Suite is a
 conceptual model and set of communications protocols used in the Internet.
-Contains 4 layers of abstraction.
+Predates the OSI model. Contains 4 layers of abstraction.
 
 ### The Four Layers of the TCP/IP Model
 1. __Link__: Lowest level; determines how data should be physically generated
