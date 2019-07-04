@@ -43,11 +43,11 @@ or a thing
 - __Networking__: Two or more computers talking to each other
 
 - __Client__: A program running on a personal computer 
-  - E.g. Web browser
+  - e.g. Web browser
 
 - __Server__: A computer running web server software on a remote computer 
   - Delivers information to other clients
-  - E.g. Apache HTTP Server
+  - e.g. Apache HTTP Server
 
 - __Internet__: The world's largest computer network
 
@@ -108,27 +108,26 @@ general networking systems than the TCP/IP model.
     - e.g. Ethernet cable, wires
 
 2. [__Data Link__](#the-data-link-layer): Transfers data between two points 
-connected by a physical layer
-  - Provides high level functions such as error correction and flow control
-  - E.g. ARP, Ethernet
+  connected by a physical layer
+    - Provides high level functions such as error correction and flow control
+    - e.g. ARP, Ethernet
 
 3. [__Network__](#the-network-layer): Passes information between lower and
-higher layers
-  - Provides addressing and routing
-  - Delivery is *not* guaranteed
-  - E.g. IP, ICMP
+  higher layers
+    - Provides addressing and routing
+    - Delivery is *not* guaranteed
+    - e.g. IP, ICMP
 
 4. [ __Transport__](#the-transport-layer): Provides transparent and reliable
-data transfer between 
-  systems, including acknowledgement and segmentation
-  - E.g. TCP, UDP
+  data transfer between systems, including acknowledgement and segmentation
+    - e.g. TCP, UDP
 
 5. __Session__: Establishes and maintains connections between network 
   applications
 
 6. __Presentation__: Represents data and allows for processes such as encryption 
   and data compression
-  - E.g. XML
+    - e.g. XML
 
 7. [__Application__](#the-application-layer): Highest level; are the services 
 one uses on the Internet
@@ -238,7 +237,7 @@ function spoofMAC # Note: first octet has to be even
 
 __Address Resolution Protocol__: Determines the MAC address of the device with
 the specified IP address using a request-response process 
-- E.g. "Who on this connection has the following MAC address?"
+- e.g. "Who on this connection has the following MAC address?"
 - Tools: `arp`
 
 
