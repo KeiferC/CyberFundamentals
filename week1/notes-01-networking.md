@@ -107,16 +107,19 @@ general networking systems than the TCP/IP model.
 1. __Physical__: Lowest level; communicates bit streams over a physical medium 
   - e.g. Ethernet cable, wires
 
-2. __Data Link__: Transfers data between two points connected by a physical layer
+2. [__Data Link__](#the-data-link-layer): Transfers data between two points 
+connected by a physical layer
   - Provides high level functions such as error correction and flow control
   - E.g. ARP, Ethernet
 
-3. __Network__: Passes information between lower and higher layers
+3. [__Network__](#the-network-layer): Passes information between lower and
+higher layers
   - Provides addressing and routing
   - Delivery is *not* guaranteed
   - E.g. IP, ICMP
 
-4. __Transport__: Provides transparent and reliable data transfer between 
+4.[ __Transport__](#the-transport-layer): Provides transparent and reliable data 
+transfer between 
   systems, including acknowledgement and segmentation
   - E.g. TCP, UDP
 
@@ -127,7 +130,8 @@ general networking systems than the TCP/IP model.
   and data compression
   - E.g. XML
 
-7. __Application__: Highest level; are the services one uses on the Internet
+7. [__Application__](#the-application-layer): Highest level; are the services 
+one uses on the Internet
 
 ![Diagram representing the OSI model](./media/osi-model.png)
 
