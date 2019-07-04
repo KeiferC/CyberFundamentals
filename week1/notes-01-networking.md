@@ -198,6 +198,10 @@ __Ethernet__: Controls how data is trasmitted over a local area network (LAN)
   - 48 bits in the format XX:XX:XX:XX:XX:XX
   - Can think about it as the address of the specific device connected to the
     network 
+  - Note: A MAC address identifies the physical address of a device. The MAC
+    address of a device remains the same, regardless of the connected networks
+    (e.g. home Wi-Fi vs work Wi-Fi). An IP address identifies the network
+    connection
 
 ```bash
 # Bash function for spoofing a Unix-based computer's Wi-Fi facing MAC address
@@ -228,8 +232,10 @@ function spoofMAC # Note: first octet has to be even
 }
 ```
 
-__Address Resolution Protocol__: TODO
-- TODO
+__Address Resolution Protocol__: Determines the MAC address of the device with
+the specified IP address using a request-response process 
+- E.g. "Who on this connection has the following MAC address?"
+- Tools: `arp`
 
 
 ## The Internet Protocol Suite - TCP/IP Model
