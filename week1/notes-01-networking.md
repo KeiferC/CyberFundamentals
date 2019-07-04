@@ -3,16 +3,15 @@
 ### Contents
 [Why Networking and NetSec?](#why-networking-and-netsec)
 
-[The Cyber Attribution Problem](#The Cyber Attribution Problem)
+[The Cyber Attribution Problem](#the-cyber-attribution-problem)
 
-[What Is Networking?](#What Is Networking?)
+[What Is Networking?](#what-is-networking)
 
-[The OSI Model](#The OSI Model)
+[The OSI Model](#the-osi-model)
 
-[The Internet Protocol Suite - TCP/IP Model](#The Internet Protocol Suite -
-TCP/IP Model)
+[The Internet Protocol Suite - TCP/IP Model](#the-internet-protocol-suite---tcpip-model)
 
-[The OSI Model vs the TCP/IP Model](#The OSI Model vs the TCP/IP Model)
+[The OSI Model vs the TCP/IP Model](#the-osi-model-vs-the-tcpip-model)
 
 
 ## Why Networking and NetSec?
