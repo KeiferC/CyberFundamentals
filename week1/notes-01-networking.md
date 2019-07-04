@@ -118,8 +118,8 @@ higher layers
   - Delivery is *not* guaranteed
   - E.g. IP, ICMP
 
-4.[ __Transport__](#the-transport-layer): Provides transparent and reliable data 
-transfer between 
+4. [ __Transport__](#the-transport-layer): Provides transparent and reliable
+data transfer between 
   systems, including acknowledgement and segmentation
   - E.g. TCP, UDP
 
