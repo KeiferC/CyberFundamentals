@@ -3,8 +3,6 @@
 ### Contents
 [Why Networking and NetSec?](#why-networking-and-netsec)
 
-    [test indent](#the-osi-model)
-
 [The Cyber Attribution Problem](#the-cyber-attribution-problem)
 
 [What Is Networking?](#what-is-networking)
@@ -133,6 +131,7 @@ general networking systems than the TCP/IP model.
 
 7. [__Application__](#the-application-layer): Highest level; are the services 
 one uses on the Internet
+    - e.g. HTTP, DNS, FTP, SMTP, POP3
 
 ![Diagram representing the OSI model](./media/osi-model.png)
 
@@ -249,13 +248,21 @@ conceptual model and set of communications protocols used in the Internet.
 Contains 4 layers of abstraction.
 
 ### The Four Layers of the TCP/IP Model
-1. __Link__:
+1. __Link__: Lowest level; determines how data should be physically generated
+  and transmitted between network devices over a physical medium. Differs from
+  OSI by assuming an existing physical infrastructure
+    - e.g. ARP, Ethernet
 
-2. __Internet__:
+2. __Internet__: Exchanges datagrams between network boundaries. Defines the
+  addressing and routing structures
+    - e.g. IP, ICMP
 
-3. __Transport__:
+3. __Transport__: Provides transparent and reliable data transfer between 
+  systems, including acknowledgement and segmentation
+    - e.g. TCP, UDP
 
-4. __Application__:
+4. __Application__: Highest level; are the services one uses on the Internet
+    - e.g. HTTP, DNS, FTP, SMTP, POP3
 
 
 ## The OSI Model vs the TCP/IP Model
