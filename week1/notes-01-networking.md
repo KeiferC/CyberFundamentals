@@ -105,7 +105,7 @@ general networking systems than the TCP/IP model.
 
 ### The Seven Layers of the OSI Model
 1. __Physical__: Lowest level; communicates bit streams over a physical medium 
-  - e.g. Ethernet cable, wires
+    - e.g. Ethernet cable, wires
 
 2. [__Data Link__](#the-data-link-layer): Transfers data between two points 
 connected by a physical layer
