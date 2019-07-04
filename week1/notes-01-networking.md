@@ -86,7 +86,8 @@ or a thing
 ## The OSI Model
 __Open Systems Interconnection (OSI)__: A standard model for packet-based 
 networks. Contains 7 layers of abstraction from the hardware level to the 
-application level
+application level. Is a newer and more comprehensive conceptual model for
+general networking systems than the TCP/IP model.
 
 ### The Seven Layers of the OSI Model
 1. __Physical__: Lowest level; communicates bit streams over a physical medium 
@@ -174,3 +175,23 @@ __Ethernet__: TODO
 __Address Resolution Protocol__: TODO
 - TODO
 
+
+## Internet Protocol Suite - TCP/IP
+__Internet Protocol Suite__: AKA TCP/IP, the Internet Protocol Suite is a
+conceptual model and set of communications protocols used in the Internet.
+Contains 4 layers of abstraction.
+
+### The Four Layers of the TCP/IP Model
+1. __Link__:
+
+2. __Internet__:
+
+3. __Transport__:
+
+4. __Application__:
+
+
+## The OSI Model vs The TCP/IP Model
+
+![Diagram comparing the abstraction layers of the OSI model with those of the
+TCP/IP model](./media/osi-v-tcpip.png)
