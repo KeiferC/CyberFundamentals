@@ -1,4 +1,4 @@
-# Week 1 - Network Security
+# Network Security
 
 ## Attacking Networks
 - Sniffing

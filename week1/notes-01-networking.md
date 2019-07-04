@@ -1,4 +1,4 @@
-# Week 1 - Basic Networking
+# Basic Networking
 
 ### Contents
 [Why Networking and NetSec?](#why-networking-and-netsec)

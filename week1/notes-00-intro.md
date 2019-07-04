@@ -1,4 +1,4 @@
-# Week 1 - An Introduction to Cyber Security
+# An Introduction to Cyber Security
 
 ### Contents
 [Basic Definitions](#definitions)
