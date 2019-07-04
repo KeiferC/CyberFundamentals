@@ -134,18 +134,34 @@ addresses to domain names and vice versa
 - Tools: `dig`, `host`, `nslookup`
 
 ### The Transport Layer
-__Transport Control Protocol (TCP)__: TODO
-- TODO
+__Transport Control Protocol (TCP)__: Provides reliable, ordered, error-checked
+streams of bytes between apps running on hosts communicating via an IP network
+- TCP divides a data stream into chunks and adds a TCP header, creating a TCP
+  segment
+- A TCP segment is encapsulated in an IP datagram and then is exchanged with
+  peers
+
+#### TCP Header
+![Diagram depicting the TCP header](./media/tcp-header.png)
 
 __User Datagram Protocol (UDP)__: TODO
 - TODO
+
+#### UDP Header
+![Diagram depicting the UDP header](./media/udp-header.png)
 
 ### The Network Layer
 __Internet Protocol (IP)__: TODO
 - TODO
 
+#### IPv4 Header
+![Diagram depicting the IPv4 header](./media/ipv4-header.png)
+
 __Internet Control Message Protocol (ICMP)__: TODO
 - TODO
+
+#### ICMP Header
+![Diagram depicting the ICMP header](./media/icmp-header.png)
 
 ### The Data Link Layer
 __Ethernet__: TODO
