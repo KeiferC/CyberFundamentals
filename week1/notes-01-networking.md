@@ -159,25 +159,34 @@ streams of bytes between apps running on hosts communicating via an IP network
 *TCP Header*
 ![Diagram depicting the TCP header](./media/tcp-header.png)
 
-__User Datagram Protocol (UDP)__: Provides a connectionless, unreliable, 
-fast, best-effort datagram delivery service
-- Relies on IP to provide service
+__User Datagram Protocol (UDP)__: Provides connectionless, unreliable, 
+fast, best-effort streams of bytes between apps running on hosts communicating
+via an IP network
+- UDP divides a data stream into chunks and adds a UDP header, creating a
+  datagram suitable for transmission via an IP network
 - No handshaking
-- No sequence numbers
+- No sequence numbers, therefore ordered delivery is not guaranteed
 - Usage includes DNS, streaming videos, and games
 
 *UDP Header*
 ![Diagram depicting the UDP header](./media/udp-header.png)
 
 ### The Network Layer
-__Internet Protocol (IP)__: TODO
-- TODO
+__Internet Protocol (IP)__: Provides a connectionless, unreliable, best-effort
+datagram delivery service
+- Delivery, integrity, ordering, non-duplication, and bandwidth no guaranteed
 
 *IPv4 Header*
 ![Diagram depicting the IPv4 header](./media/ipv4-header.png)
 
-__Internet Control Message Protocol (ICMP)__: TODO
-- TODO
+__Internet Control Message Protocol (ICMP)__: Provides a debugging service to
+determine network information
+- Usage includes determining remote host reachability, informing traffic
+  overloads, obtaining network masks at boot time for diskless systems,
+  synchronizing clocks, etc.
+- Exchanges control and error messages about the delivery of IP datagrams
+  - Messages include `ECHO_REQUEST`, `ECHO_REPLY`, `ICMP_MASKREQ` 
+- `ping`: A utility used to send `ICMP ECHO_REQUEST` packets to network hosts
 
 *ICMP Header*
 ![Diagram depicting the ICMP header](./media/icmp-header.png)
