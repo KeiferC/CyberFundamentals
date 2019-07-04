@@ -89,13 +89,32 @@ used today)
   level
 
 ### The Seven Layers of the OSI Model
-1. __Physical__:
-2. __Data Link__:
-3. __Network__:
-4. __Transport__:
-5. __Session__:
-6. __Presentation__:
-7. __Application__:
+1. __Physical__: Lowest level; communicates bit streams over a physical medium 
+  - e.g. Ethernet cable, wires
+
+2. __Data Link__: Transfers data between two points connected by a physical layer
+  - Provides high level functions such as error correction and flow control
+  - E.g. ARP, Ethernet
+
+3. __Network__: Passes information between lower and higher layers
+  - Provides addressing and routing
+  - Delivery is *not* guaranteed
+  - E.g. IP, ICMP
+
+4. __Transport__: Provides transparent and reliable data transfer between
+systems, including acknowledgement and segmentation
+  - E.g. TCP, UDP
+
+5. __Session__: Establishes and maintains connections between network
+applications
+
+6. __Presentation__: Represents data and allows for processes such as encryption
+and data compression
+  - E.g. XML
+
+7. __Application__: Highest level; are the services one uses on the Internet
+
+![Diagram representing the OSI model](./media/osi-model.png)
 
 ### The Application Layer
 #### Domain Name Systems (DNS)
