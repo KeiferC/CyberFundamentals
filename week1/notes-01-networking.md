@@ -200,7 +200,9 @@ __Ethernet__: Controls how data is trasmitted over a local area network (LAN)
     network 
 
 ```bash
-# Bash function for spoofing a Unix-based computer's MAC address
+# Bash function for spoofing a Unix-based computer's Wi-Fi facing MAC address
+# Note: May need to modify according to OS-specific listings of network
+#       interfaces
 function spoofMAC # Note: first octet has to be even
 {
 	OLD=$(ifconfig en1 | grep 'ether' | cut -c 8-24)
