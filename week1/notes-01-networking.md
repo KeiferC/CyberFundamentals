@@ -6,8 +6,7 @@
 
 
 ## The Cyber Attribution Problem
-- __Attribution__: the action of regarding something as being cause by a person
-  or a thing
+__Attribution__: the action of regarding something as being cause by a person or a thing
 
 ### Tradtional Warfare - How Do you Attribute an Act of War?
 - Uniform of attackers
@@ -84,9 +83,7 @@ used today)
 
 
 ## The OSI Model
-- __Open Systems Interconnection (OSI)__: A standard model for packet-based
-  networks. Contains 7 layers of abstraction from the hardware level to the application
-  level
+__Open Systems Interconnection (OSI)__: A standard model for packet-based networks. Contains 7 layers of abstraction from the hardware level to the application level
 
 ### The Seven Layers of the OSI Model
 1. __Physical__: Lowest level; communicates bit streams over a physical medium 
@@ -118,26 +115,34 @@ and data compression
 
 ### The Application Layer
 #### Domain Name Systems (DNS)
+__Domain Name Systems (DNS)__: A telephone book for the Internet; maps IP
+addresses to domain names and vice versa 
 - TODO
 
 ### The Transport Layer
 #### Transport Control Protocol (TCP)
+__Transport Control Protocol (TCP)__: TODO
 - TODO
 
 #### User Datagram Protocol (UDP)
+__User Datagram Protocol (UDP)__: TODO
 - TODO
 
 ### The Network Layer
 #### Internet Protocol (IP)
+__Internet Protocol (IP)__: TODO
 - TODO
 
 #### Internet Control Message Protocol (ICMP)
+__Internet Control Message Protocol (ICMP)__: TODO
 - TODO
 
 ### The Data Link Layer
 #### Ethernet
+__Ethernet__: TODO
 - TODO
 
 #### Address Resolution Protocol (ARP)
+__Address Resolution Protocol__: TODO
 - TODO
 
