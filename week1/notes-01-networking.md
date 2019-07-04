@@ -1,7 +1,7 @@
 # Week 1 - Basic Networking
 
 ### Contents
-[Why Networking and NetSec?](#Why Networking and NetSec?)
+[Why Networking and NetSec?](#why-networking-and-netsec)
 
 [The Cyber Attribution Problem](#The Cyber Attribution Problem)
 
