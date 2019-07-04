@@ -1,5 +1,14 @@
 # Week 1 - Basic Networking
 
+### Contents
+[Why Networking and NetSec?](#Why Networking and NetSec?)
+[The Cyber Attribution Problem](#The Cyber Attribution Problem)
+[What Is Networking?](#What Is Networking?)
+[The OSI Model](#The OSI Model)
+[The Internet Protocol Suite - TCP/IP Model](#The Internet Protocol Suite -
+TCP/IP Model)
+[The OSI Model vs the TCP/IP Model](#The OSI Model vs the TCP/IP Model)
+
 ## Why Networking and NetSec?
 - The Trinity of Trouble - "Connectivity"
 - Critical to understanding the cyber attribution problem
@@ -9,7 +18,7 @@
 __Attribution__: the action of regarding something as being caused by a person
 or a thing
 
-### Tradtional Warfare - How Do you Attribute an Act of War?
+### Traditional Warfare - How Do you Attribute an Act of War?
 - Uniform of attackers
 - Types of weapons used by attackers
 - Direction of strike
@@ -176,7 +185,7 @@ __Address Resolution Protocol__: TODO
 - TODO
 
 
-## Internet Protocol Suite - TCP/IP
+## The Internet Protocol Suite - TCP/IP Model
 __Internet Protocol Suite__: AKA TCP/IP, the Internet Protocol Suite is a
 conceptual model and set of communications protocols used in the Internet.
 Contains 4 layers of abstraction.
@@ -191,7 +200,7 @@ Contains 4 layers of abstraction.
 4. __Application__:
 
 
-## The OSI Model vs The TCP/IP Model
+## The OSI Model vs the TCP/IP Model
 
 ![Diagram comparing the abstraction layers of the OSI model with those of the
 TCP/IP model](./media/osi-v-tcpip.png)
