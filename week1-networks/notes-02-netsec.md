@@ -112,7 +112,9 @@ TODO
 ### `nmap`
 TODO
 
-*NMAP - STEALTH SCANNING*
+
+_*NMAP - STEALTH SCANNING*_
+
 Three Stealth Scans
 1. __Fin scan__: TODO
 ```bash
