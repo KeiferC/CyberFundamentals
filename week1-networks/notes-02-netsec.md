@@ -10,6 +10,8 @@
 
 [Network Sniffing - Software Tools](#network-sniffing---software-tools)
 
+
+
 *[Back](../week1-networks#week-1---networks)*
 
 
@@ -64,4 +66,110 @@ foo@bar:~$ sudo ifconfig -i <INTERFACE> promisc -arp
 
 ## Network Sniffing - Software Tools
 ### `tcpdump`
+TODO
 
+### Wireshark
+TODO
+
+### `tshark`
+TODO
+
+### `ettercap`
+TODO
+
+### `bettercap`
+TODO
+
+### `dsniff`
+TODO
+
+### `ngrep`
+TODO
+
+
+## Network Sniffing - Sniffing Switched Networks
+TODO
+
+
+## Network Sniffing - Defense
+TODO
+
+
+## Network Scanning - An Introduction
+TODO
+
+
+## Network Scanning - Software Tools
+### `fping`
+TODO
+
+### `nc`
+TODO
+
+### Shodan
+TODO
+
+### `nmap`
+TODO
+
+*NMAP - STEALTH SCANNING*
+Three Stealth Scans
+1. __Fin scan__: TODO
+```bash
+foo@bar:~$ #TODO
+```
+2. __NULL scan__: TODO
+```bash
+foo@bar:~$ #TODO
+```
+3. __XMAS scan__: TODO
+```bash
+foo@bar:~$ #TODO
+```
+*NMAP - DECOY SCANNING*
+TODO
+
+
+## Network Scanning - Defense
+TODO
+
+
+## DDoS Attacks - An Introduction
+TODO
+
+### Definitions
+- TODO
+
+## DDoS Attacks - Techniques
+### SYN Flood
+TODO
+
+> __Teardrop__. TODO
+
+### Ping of Death
+TODO
+
+### ICMP Flood
+TODO
+
+> __Smurf Attack__. TODO
+
+### UDP Flood
+TODO
+
+### DNS Amplification
+TODO
+
+> __Mirai and the Dyn Attack__. TODO
+
+
+## DDoS Attacks - Defense
+### Defending Against a SYN Flood
+TODO
+
+### Defending Against a ICMP Flood
+TODO
+
+
+## A Quick Note of Packet Spoofing
+TODO
