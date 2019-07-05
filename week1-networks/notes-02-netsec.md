@@ -4,7 +4,7 @@
 
 [Ways of Attacking Networks](#ways-of-attacking-networks)
 
-[Network Sniffing - An Introduction](#network-sniffing)
+[Network Sniffing - An Introduction](#network-sniffing---an-introduction)
 
 [Network Sniffing - Hardware Tools](#network-sniffing---hardware-tools)
 
@@ -40,12 +40,26 @@ Step 1: Set your network card to promiscuous mode
 
 Step 2: Disable the use of the ARP
 ```bash
-# For Unix/Linus/Macs
+# For Unix/Linux/Macs
 foo@bar:~$ sudo ifconfig -i <INTERFACE> promisc -arp
 ```
 
 
 ## Network Sniffing - Hardware Tools
+- A computer with wired or wireless networking (admin access required)
+
+- __Span port__: AKA port mirroring; a network switch setting in which a copy of
+  all packets transmitted to and from a source port are forwarded to a single 
+  destination port
+
+- __LAN tap__: A small physical device used for monitoring ethernet
+  communications. Contains at least 3 ports: 2 for allowing normal
+  communications traffic to move unimpeded; 1 for monitoring the traffic moving
+  between the previous 2 ports
+
+- __Network hub__: A network hardware device containing multiple I/O ports in
+  which the input at one port outputs to all other ports. Used for unswitched
+  networks
 
 
 ## Network Sniffing - Software Tools
