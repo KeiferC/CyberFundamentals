@@ -13,7 +13,7 @@
 
 [The OSI Model vs the TCP/IP Model](#the-osi-model-vs-the-tcpip-model)
 
-*[Back](..#week-1---networks)*
+*[Back](../week1-networks#week-1---networks)*
 
 
 ## Why Networking and NetSec?
