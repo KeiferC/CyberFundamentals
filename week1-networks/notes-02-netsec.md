@@ -113,7 +113,7 @@ TODO
 TODO
 
 
-_*NMAP - STEALTH SCANNING*_
+**_Nmap - Stealth Scanning_**
 
 Three Stealth Scans
 1. __Fin scan__: TODO
@@ -128,7 +128,8 @@ foo@bar:~$ #TODO
 ```bash
 foo@bar:~$ #TODO
 ```
-*NMAP - DECOY SCANNING*
+
+**_Nmap - Decoy Scanning_**
 TODO
 
 
@@ -169,7 +170,7 @@ TODO
 ### Defending Against a SYN Flood
 TODO
 
-### Defending Against a ICMP Flood
+### Defending Against an ICMP Flood
 TODO
 
 
