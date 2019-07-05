@@ -38,4 +38,19 @@ Increasing?](./week1-networks/notes-00-intro.md#the-trinity-of-trouble---why-are
 
 [Network Sniffing - Software Tools](./week1-networks/notes-02-netsec.md#network-sniffing---software-tools)
 
+[Network Sniffing - Defense](./notes-02-netsec.md#network-sniffing---defense)
+
+[Network Scanning - An Introduction](./week1-networks/notes-02-netsec.md#network-scanning---an-introduction)
+
+[Network Scanning - Software Tools](./week1-networks/notes-02-netsec.md#network-scanning---software-tools)
+
+[Network Scanning - Defense](./week1-networks/notes-02-netsec.md#network-scanning---defense)
+
+[DDoS Attacks - An Introduction](./week1-networks/notes-02-netsec.md#ddos-attacks---an-introduction)
+
+[DDoS Attacks - Techniques](./week1-networks/notes-02-netsec.md#ddos-attacks---techniques)
+
+[DDoS Attacks - Defense](./week1-networks/notes-02-netsec.md#ddos-attacks---defense)
+
+[A Quick Note on Packet Spoofing](./week1-networks/notes-02-netsec.md#a-quick-note-on-packet-spoofing)
 
