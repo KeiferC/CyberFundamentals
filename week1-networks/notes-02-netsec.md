@@ -10,7 +10,21 @@
 
 [Network Sniffing - Software Tools](#network-sniffing---software-tools)
 
+[Network Sniffing - Defense](#network-sniffing---defense)
 
+[Network Scanning - An Introduction](#network-scanning---an-introduction)
+
+[Network Scanning - Software Tools](#network-scanning---software-tools)
+
+[Network Scanning - Defense](#network-scanning---defense)
+
+[DDoS Attacks - An Introduction](#ddos-attacks---an-introduction)
+
+[DDoS Attacks - Techniques](#ddos-attacks---techniques)
+
+[DDoS Attacks - Defense](#ddos-attacks---defense)
+
+[A Quick Note on Packet Spoofing](#a-quick-note-on-packet-spoofing)
 
 *[Back](../week1-networks#week-1---networks)*
 
@@ -130,6 +144,7 @@ foo@bar:~$ #TODO
 ```
 
 **_Nmap - Decoy Scanning_**
+
 TODO
 
 
@@ -174,5 +189,5 @@ TODO
 TODO
 
 
-## A Quick Note of Packet Spoofing
+## A Quick Note on Packet Spoofing
 TODO
