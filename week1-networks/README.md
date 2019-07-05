@@ -40,3 +40,18 @@ Increasing?](./notes-00-intro.md#the-trinity-of-trouble---why-are-cyber-threats-
 
 [Network Sniffing - Software Tools](./notes-02-netsec.md#network-sniffing---software-tools)
 
+[Network Sniffing - Defense](./notes-02-netsec.md#network-sniffing---defense)
+
+[Network Scanning - An Introduction](./notes-02-netsec.md#network-scanning---an-introduction)
+
+[Network Scanning - Software Tools](./notes-02-netsec.md#network-scanning---software-tools)
+
+[Network Scanning - Defense](./notes-02-netsec.md#network-scanning---defense)
+
+[DDoS Attacks - An Introduction](./notes-02-netsec.md#ddos-attacks---an-introduction)
+
+[DDoS Attacks - Techniques](./notes-02-netsec.md#ddos-attacks---techniques)
+
+[DDoS Attacks - Defense](./notes-02-netsec.md#ddos-attacks---defense)
+
+[A Quick Note on Packet Spoofing](./notes-02-netsec.md#a-quick-note-on-packet-spoofing)
