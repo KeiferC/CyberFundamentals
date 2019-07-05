@@ -34,7 +34,15 @@ __.pcap__: a common file extension for packet captures
   - A 100 mb PCAP file contains tens of thousands of packets
 
 ### Setting Up Your Lab
+Step 1: Set your network card to promiscuous mode
+- __Promiscuous mode__: a NIC mode that allows one to look at all packets
+  regardless of destination address
 
+Step 2: Disable the use of the ARP
+```bash
+# For Unix/Linus/Macs
+foo@bar:~$ sudo ifconfig -i <INTERFACE> promisc -arp
+```
 
 
 ## Network Sniffing - Hardware Tools
