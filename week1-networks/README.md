@@ -1,6 +1,6 @@
 # Week 1 - Networks
 
-[Back](..#cyber-notes)
+[Back](/cyber-notes#cyber-notes)
 
 ## [An Introduction to Cyber Security](./notes-00-intro.md#an-introduction-to-cyber-security)
 
