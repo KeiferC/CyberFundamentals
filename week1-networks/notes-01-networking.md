@@ -74,17 +74,6 @@ or a thing
     - Time To Live (TTL; in IP layer)
     - Payload
 
-- __.pcap__: a common file extension for packet captures
-  - Is commonly used in apps like Wireshark, ettercap, and tcpdump
-  - A 100 mb PCAP file contains tens of thousands of packets
-
-- __Network sniffing__: looking at network traffic and analyzing packets
-  - Most traffic on a network is still in plaintext
-  - Uses of network sniffing
-    - Troubleshoot networking issues
-    - Record communications
-    - Catch sensitive information
-
 ### The TCP Three-Way Handshake
 ![Diagram depicting the TCP Three-Way Handshake](./media/3-way-handshake.png)
 
