@@ -216,7 +216,9 @@ foo@bar:~$ nc -v -n -z -w1 <TARGET_IP_ADDR> <START_PORT>-<END_PORT>
 
 ### Shodan
 A search engine for devices connected to the internet. To get details on
-an IP addresrs: https://www.shodan.io/host/<IP_ADDRESS>
+an IP address:
+
+https://www.shodan.io/host/<IP_ADDRESS>
 
 Site: [shodan.io](https://www.shodan.io)
 
