@@ -250,12 +250,13 @@ is open
 
 Step 1: Nmap sends a TCP packet with the FIN flag to a target port
 
-Step 2: 
+Step 2: Nmap forms a conclusion from the reponse
 - If the port is closed, the target responds with a TCP packet with a RST
-  flag set
-- If the port is opened or filtered, the target does not repond
+  flag set. Nmap assigns the port state as `closed`
+- If the port is opened or filtered, the target does not repond. Nmap 
+  assigns the port state as `open | filtered`
 - If the port is filtered, the target responds with an ICMP unreachable 
-  error
+  error. Nmap assigns the port state as `filtered`
 
 ```bash
 # Ex. FIN scanning ports of scanme.nmap.org
@@ -283,7 +284,7 @@ XMAS scans but is faster and does not rely on the RFC compliance loophole.
 
 Step 1: Nmap sends a TCP packet with the SYN flag to a target port
 
-Step 2:
+Step 2: Nmap forms a conlcusion from the response
 - If the port is closed, the target responds with a TCP packet with the 
   RST flag set. Nmap thus assigns the port state as `closed`
 - If the port is open, the target responds with a TCP packet with the 
