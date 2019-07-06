@@ -173,7 +173,7 @@ foo@bar:~$ sudo bettercap -S ARP
   - SSH instead of RSH or Telnet
   - SCP instead of FTP
   - IMAP or POP3 using SSL
-- Use of Virtual Private Network (VPN)
+- Use a Virtual Private Network (VPN)
 
 ### Defense on Switched Networks
 - Packet filtering
@@ -186,12 +186,22 @@ foo@bar:~$ sudo bettercap -S ARP
 
 
 ## Network Scanning - An Introduction
-TODO
+__Network scanning__: Conducting network reconnaissance to determine:
+- What devices and computers are connected to the network?
+- What ports are open on a computer?
+- What services are running on a computer?
+- What possible vulnerabilities exist on a computer?
 
 
 ## Network Scanning - Software Tools
 ### `fping`
-TODO
+A program like `ping` that can be used on a list of IP addresses
+
+Site: [fping.sourceforge.net](https://fping.sourceforge.net)
+
+Problems with `ping`:
+- Cannot check for open ports on a remote system
+- Many systems have turned off `ping` reponding
 
 ### `nc`
 TODO
