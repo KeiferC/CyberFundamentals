@@ -204,13 +204,26 @@ Problems with `ping`:
 - Many systems have turned off `ping` reponding
 
 ### `nc`
-TODO
+Netcat, the TCP/IP Swiss Army knife
+
+```bash
+# Manual
+foo@bar:~$ man nc
+
+# Ex. Port can an IP address
+foo@bar:~$ nc -v -n -z -w1 <TARGET_IP_ADDR> <START_PORT>-<END_PORT>
+```
 
 ### Shodan
-TODO
+A search engine for devices connected to the internet. To get details on
+an IP addresrs: https://www.shodan.io/host/<IP_ADDRESS>
+
+Site: [shodan.io](https://www.shodan.io)
 
 ### `nmap`
-TODO
+A network ecploration tool and security / port scanner
+
+
 
 
 **_Nmap - Stealth Scanning_**
