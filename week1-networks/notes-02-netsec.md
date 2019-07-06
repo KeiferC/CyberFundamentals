@@ -223,14 +223,25 @@ https://www.shodan.io/host/<IP_ADDRESS>
 Site: [shodan.io](https://www.shodan.io)
 
 ### `nmap`
-A network ecploration tool and security / port scanner
+A network exploration tool and security / port scanner
 
+Site: [nmap.org](https://nmap.org)
 
-
+```bash
+# Ex. Network scan
+#     -v:  verbose mode
+#     -A:  OS and OS version detection, script scanning, and traceroute enabled
+#     -SV: Version detection enabled
+foo@bar:~$ nmap -v -A -sV 192.168.1.1
+```
 
 **_Nmap - Stealth Scanning_**
 
-Three Stealth Scans
+A default Nmap scan with no flags will perform a TCP SYN scan of which many 
+modern firewalls and Intrusion Detection Systems (IDS) will detect, flag, 
+and log. Therefore, stealth scanning is critical to network recon.
+
+Four Stealth Scans
 1. __Fin scan__: TODO
 ```bash
 foo@bar:~$ #TODO
@@ -243,6 +254,36 @@ foo@bar:~$ #TODO
 ```bash
 foo@bar:~$ #TODO
 ```
+
+4. __SYN scan__: A common TCP SYN scan of which most IDS will detect.
+
+Step 1: Nmap sends a TCP packet with the SYN flag set to a target port
+
+Step 2:
+- If the port is closed, the target responds with a TCP packet with the 
+  RST flag set. Nmap thus assigns the port state as `closed`
+- If the port is open, the target responds with a TCP packet with the 
+  SYN and ACK flags set. Because Nmap, not the OS, crafted the SYN, the 
+  OS does not expect the SYN/ACK response and thus sends a TCP packet
+  with the RST flag set to the target port. As a result, no complete TCP
+  connection is formed. Nmap assigns the port state as `open`
+- If the port does not respond after retransmissions or responds with 
+  ICMP errors, Nmap assigns the port state as `filtered`. The port may 
+  therefore be filtered (e.g. by a firewall) or the network may be 
+  unreliable.
+
+```bash
+Ex. SYN scanning ports 22, 113, & 139 of scanme.nmap.org
+foo@bar:~$ sudo nmap -sS -p22,113,139 scanme.nmap.org
+```
+
+Note: Usage of a stealth flag is not foolproof. Most modern IDS can be
+configured to catch the packets that result from the set flags. An 
+effective stealth scan results from a thorough understanding of networks 
+and from an understanding of the nmap tools and techniques.
+
+[For more info](https://nmap.org/book/scan-methods.html)
+
 
 **_Nmap - Decoy Scanning_**
 
