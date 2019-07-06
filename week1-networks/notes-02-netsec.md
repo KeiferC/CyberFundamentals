@@ -239,25 +239,49 @@ foo@bar:~$ nmap -v -A -sV 192.168.1.1
 
 A default Nmap scan with no flags will perform a TCP SYN scan of which many 
 modern firewalls and Intrusion Detection Systems (IDS) will detect, flag, 
-and log. Therefore, stealth scanning is critical to network recon.
+and log. Therefore, stealth scanning is critical to network recon
 
 Four Stealth Scans
-1. __Fin scan__: TODO
+1. __FIN scan__: A TCP scan with only the FIN flag bits set. Exploits a 
+loophole in [TCP RFC](https://www.rfc-editor.org/rfc/rfc793.txt) compliant 
+systems in which any packets sent without SYN, ACK, or RST flags set will 
+return a RST if the port is closed. Else, the port will not respond if it 
+is open
+
+Step 1: Nmap sends a TCP packet with the FIN flag to a target port
+
+Step 2: 
+- If the port is closed, the target responds with a TCP packet with a RST
+  flag set
+- If the port is opened or filtered, the target does not repond
+- If the port is filtered, the target responds with an ICMP unreachable 
+  error
+
 ```bash
-foo@bar:~$ #TODO
-```
-2. __NULL scan__: TODO
-```bash
-foo@bar:~$ #TODO
-```
-3. __XMAS scan__: TODO
-```bash
-foo@bar:~$ #TODO
+# Ex. FIN scanning ports of scanme.nmap.org
+foo@bar:~$ sudo nmap -sF scanme.nmap.org
 ```
 
-4. __SYN scan__: A common TCP SYN scan of which most IDS will detect.
+2. __NULL scan__: A TCP scan with no flags set. Operates in the same manner 
+as a FIN scan
 
-Step 1: Nmap sends a TCP packet with the SYN flag set to a target port
+```bash
+# Ex. NULL scanning ports of scanme.nmap.org
+foo@bar:~$ sudo nmap -sN scanme.nmap.org
+```
+
+3. __XMAS scan__: A TCP scan with the FIN, PSH, & URG flags set. Operates 
+in the same manner as a FIN scan
+
+```bash
+# Ex. XMAS scanning ports of scanme.nmap.org
+foo@bar:~$ sudo nmap -sX scanme.nmap.org
+```
+
+4. __SYN scan__: A common TCP SYN scan. Less stealthy than FIN, NULL, and
+XMAS scans but is faster and does not rely on the RFC compliance loophole.
+
+Step 1: Nmap sends a TCP packet with the SYN flag to a target port
 
 Step 2:
 - If the port is closed, the target responds with a TCP packet with the 
@@ -273,14 +297,14 @@ Step 2:
   unreliable.
 
 ```bash
-Ex. SYN scanning ports 22, 113, & 139 of scanme.nmap.org
+# Ex. SYN scanning ports 22, 113, & 139 of scanme.nmap.org
 foo@bar:~$ sudo nmap -sS -p22,113,139 scanme.nmap.org
 ```
 
 Note: Usage of a stealth flag is not foolproof. Most modern IDS can be
 configured to catch the packets that result from the set flags. An 
 effective stealth scan results from a thorough understanding of networks 
-and from an understanding of the nmap tools and techniques.
+and of nmap tools and techniques.
 
 [For more info](https://nmap.org/book/scan-methods.html)
 
@@ -291,7 +315,7 @@ TODO
 
 
 ## Network Scanning - Defense
-TODO
+TODO:
 
 
 ## DDoS Attacks - An Introduction
