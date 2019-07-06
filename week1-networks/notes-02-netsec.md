@@ -159,11 +159,30 @@ foo@bar:~$ ngrep -q -I file.pcap | grep -i github
 ```
 
 ## Network Sniffing - Sniffing Switched Networks
-TODO
+__ARP spoofing__: AKA ARP poisoning; a MITM attack in which one pretends to be a
+router
 
+```bash
+# Ex. ARP spoofing via bettercap
+foo@bar:~$ sudo bettercap -S ARP
+```
 
 ## Network Sniffing - Defense
-TODO
+- Use encryption and encrypted network protocols
+  - HTTPS instead of HTTP
+  - SSH instead of RSH or Telnet
+  - SCP instead of FTP
+  - IMAP or POP3 using SSL
+- Use of Virtual Private Network (VPN)
+
+### Defense on Switched Networks
+- Packet filtering
+- Avoid trust relationships
+- Tools
+  - anti-arpspoof
+  - ArpON
+  - Antidote
+  - Arpwatch
 
 
 ## Network Scanning - An Introduction
