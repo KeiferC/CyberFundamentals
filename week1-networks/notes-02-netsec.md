@@ -63,16 +63,13 @@ foo@bar:~$ sudo ifconfig -i <INTERFACE> promisc -arp
 
 ## Network Sniffing - Hardware Tools
 - A computer with wired or wireless networking (admin access required)
-
 - __Span port__: AKA port mirroring; a network switch setting in which a copy of
   all packets transmitted to and from a source port are forwarded to a single 
   destination port
-
 - __LAN tap__: A small physical device used for monitoring ethernet
   communications. Contains at least 3 ports: 2 for allowing normal
   communications traffic to move unimpeded; 1 for monitoring the traffic moving
   between the previous 2 ports
-
 - __Network hub__: A network hardware device containing multiple I/O ports in
   which the input at one port outputs to all other ports. Used for unswitched
   networks
@@ -80,26 +77,86 @@ foo@bar:~$ sudo ifconfig -i <INTERFACE> promisc -arp
 
 ## Network Sniffing - Software Tools
 ### `tcpdump`
-TODO
+A command-line packet analyzer
+```bash
+# Usage
+foo@bar:~$ sudo tcpdump -a <INTERFACE>
+
+# Manual
+foo@bar:~$ man tcpdump
+
+# Ex. Reading a PCAP file
+foo@bar:~$ tcpdump -r file.pcap
+
+# Ex. Splitting a PCAP file into smaller, 10 mb files
+foo@bar:~$ tcpdump -r old_file.pcap -w new_files -C 10
+```
 
 ### Wireshark
-TODO
+An open source, free graphical and entensive packet analyzer, similar to `tcpdump`
+
+Site: [wireshark.org](https://www.wireshark.org)
 
 ### `tshark`
-TODO
+A command-line version of Wireshark
+```bash
+# Manual
+foo@bar:~$ man tshark
+
+# Ex. Listing hosts in a PCAP file
+foo@bar:~$ tshark -r file.pcap -1 -z hosts,ipv4
+```
 
 ### `ettercap`
-TODO
+A graphical and command-line suite of man-in-the-middle (MITM) attack tools. 
+Uses include:
+- Capturing passwords
+- Conducting MITM attacks
+- Hijacking sessions
+
+```bash
+# Manual
+foo@bar:~$ man ettercap
+
+# Ex. Listing plaintext passwords captured in a PCAP file
+foo@bar:~$ ettercap -T -r set3.pcap | grep "PASS:"
+```
 
 ### `bettercap`
-TODO
+A ruby-based suite of MITM attack tools. Similar to `ettercap`
+
+Site: [bettercap.org](https://www.bettercap.org)
 
 ### `dsniff`
-TODO
+A command line suite of network sniffing tools including: 
+- `dsniff # sniffs passwords`
+- `webspy # intercepts entered URIs`
+- `mailsnarf # intercepts POP or SMTP-based mail`
+
+```bash
+# Usage
+foo@bar:~$ sudo dsniff -i <INTERFACE>
+```
+
+Note: No longer maintained
 
 ### `ngrep`
-TODO
+`grep` for networks
 
+Currently recognizes:
+- IPv4/6
+- TCP
+- UDP
+- ICMPv4/6
+- IGMP
+- etc.
+
+Site: [ngrep.sourceforge.net](https://ngrep.sourceforge.net)
+
+```bash
+# Ex. Searching for text strings in a PCAP file
+foo@bar:~$ ngrep -q -I file.pcap | grep -i github
+```
 
 ## Network Sniffing - Sniffing Switched Networks
 TODO
