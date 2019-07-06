@@ -330,45 +330,84 @@ accidental SYN flood
 
 
 ## Network Scanning - Defense
-TODO:
-
+- If services on a computer are not in use, close them
+- Use packet filtering
+- Use firewalls (though there are firewall evasion techniques)
 
 ## DDoS Attacks - An Introduction
-TODO
+__Distributed Denial of Service (DDoS) Attacks__: To overwhelm a target 
+to the point in which they cannot perform their services
 
 ### Definitions
-- TODO
+- __Zombie__: an infected and compromised machine
+- __Botnet__: a network of infected machines that can be used to perform
+  DDoS attacks
+- __Comman and Control (C&C)__: Infrastructure used to control malware and
+  botnets (e.g. servers, software, etc.)
 
 ## DDoS Attacks - Techniques
 ### SYN Flood
-TODO
+An attacker sends SYN packets with spoofed source addresses to a target.
+The target responds by sending SYN/ACK packets to the spoofed addresses.
+The target does not receive any responses from the spoof addresses and 
+thus keeps the half-open connection until the connection times out. Can 
+prevent real SYN packets from connecting to the target.
 
-> __Teardrop__. TODO
+### Teardrop
+AKA TCP fragmentation, the attacker sends mangled IP fragments with 
+overlapping and oversized payloads to a target machine. The attacker mangles 
+the IP fragment by messing with the fragment offset field in the IP header. 
+If the target machine cannot reassemble the packets, it will continue to 
+accumulate the large packets until a buffer overflow occurs.
 
 ### Ping of Death
-TODO
+Because a user can specify a packet size larger than the maximum size of 
+an IP packet, as standardized by the IP RFC, an attacker can send an ICMP 
+echo request to a machine that has no measures in place to handle cases that 
+are not RFC compliant. As the target machine fails to reassemble the packets, 
+a buffer overflow occurs.
 
 ### ICMP Flood
-TODO
+The attacker overloads the target with a huge number of ICMP echo requests 
+from spoofed source IP addresses. Because the target needs to repond to every 
+request, a large enough number of requests can overload a target.
 
-> __Smurf Attack__. TODO
+> __Smurf Attack__. An old ICMP flood attack from the 1990s, significant due to 
+its use of *amplification*. Amplification increases the processing load by 
+setting the source IP address as that of the target, thus the target would 
+send replies to itself.
 
 ### UDP Flood
-TODO
+Uses the same method as an ICMP flood attack, but uses UDP packets instead of 
+ICMP packets.
 
 ### DNS Amplification
-TODO
+Uses publically accessible DNS servers to overload the target with responses. 
+The attacker sends DNS requests to DNS servers using DNS protocol extensions 
+that allow for responses containing increased message sizes. The DNS requests 
+contain the target's IP address as the source address. Thus, the DNS servers 
+overload the target with large DNS reponses.
 
-> __Mirai and the Dyn Attack__. TODO
+> __Mirai and the Dyn Attack__. Mirai is a botnet formed by exploiting the 
+poor security standards of IoT devices. In 2016, it was used to DDoS Dyn, 
+using DNS amplification, effectively shutting down or otherwise negatively 
+affecting major services including Amazon.com, GitHub, PayPal, Twitter, etc.
+The [Mirai source code](https://github.com/jgamblin/Mirai-Source-Code) is 
+available on GitHub.
 
 
 ## DDoS Attacks - Defense
 ### Defending Against a SYN Flood
-TODO
+- Reduce the SYN-received timeout
+- Drop half-open connections when a connection count limit has been
+  reached and when new requests arrive
+- Limit the number of half-open connections from a specific source
+- Increase the length of the half-open connection queue
+- Use SYN cookies
 
 ### Defending Against an ICMP Flood
-TODO
+- Configure hosts to not respond to ICMP requests or broadcasts
 
 
 ## A Quick Note on Packet Spoofing
-TODO
+[Python's Scapy](https://scapy.net/) allows for extensive packet manipulation.
