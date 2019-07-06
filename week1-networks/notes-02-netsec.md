@@ -311,7 +311,21 @@ and of nmap tools and techniques.
 
 **_Nmap - Decoy Scanning_**
 
-TODO
+AKA a cloak scan, decoy scans make it appear to the target that the 
+specified decoy hosts are also scanning the target network as well. 
+Therefore, the target does not know which IP was scanning and which 
+were decoys. 
+
+```bash
+# Usage
+foo@bar:~$ sudo nmap -D <DECOY_1_IP>, <DECOY_2_IP>...
+```
+
+Note: Decoy scanning can be defeated with router path tracing, 
+response-dropping, and other techniques
+
+Important: Must use real, live IP addresses, or else would result in an 
+accidental SYN flood
 
 
 ## Network Scanning - Defense
