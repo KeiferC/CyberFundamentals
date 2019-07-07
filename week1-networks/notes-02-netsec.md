@@ -76,7 +76,7 @@ foo@bar:~$ sudo ifconfig -i <INTERFACE> promisc -arp
 
 
 ## Network Sniffing - Software Tools
-### `tcpdump`
+### `tcpdump`.
 A command-line packet analyzer
 ```bash
 # Usage
@@ -93,12 +93,13 @@ foo@bar:~$ tcpdump -r old_file.pcap -w new_files -C 10
 ```
 
 ### Wireshark
-An open source, free graphical and entensive packet analyzer, similar to `tcpdump`
+An open source, free graphical and entensive packet analyzer, similar to
+`tcpdump`.
 
 Site: [wireshark.org](https://www.wireshark.org)
 
 ### `tshark`
-A command-line version of Wireshark
+A command-line version of Wireshark.
 ```bash
 # Manual
 foo@bar:~$ man tshark
@@ -123,7 +124,7 @@ foo@bar:~$ ettercap -T -r set3.pcap | grep "PASS:"
 ```
 
 ### `bettercap`
-A ruby-based suite of MITM attack tools. Similar to `ettercap`
+A ruby-based suite of MITM attack tools. Similar to `ettercap`.
 
 Site: [bettercap.org](https://www.bettercap.org)
 
@@ -138,10 +139,10 @@ A command line suite of network sniffing tools including:
 foo@bar:~$ sudo dsniff -i <INTERFACE>
 ```
 
-Note: No longer maintained
+Note: No longer maintained.
 
 ### `ngrep`
-`grep` for networks
+`grep` for networks.
 
 Currently recognizes:
 - IPv4/6
@@ -160,7 +161,7 @@ foo@bar:~$ ngrep -q -I file.pcap | grep -i github
 
 ## Network Sniffing - Sniffing Switched Networks
 __ARP spoofing__: AKA ARP poisoning; a MITM attack in which one pretends to be a
-router
+router.
 
 ```bash
 # Ex. ARP spoofing via bettercap
@@ -195,7 +196,7 @@ __Network scanning__: Conducting network reconnaissance to determine:
 
 ## Network Scanning - Software Tools
 ### `fping`
-A program like `ping` that can be used on a list of IP addresses
+A program like `ping` that can be used on a list of IP addresses.
 
 Site: [fping.sourceforge.net](https://fping.sourceforge.net)
 
@@ -204,7 +205,7 @@ Problems with `ping`:
 - Many systems have turned off `ping` reponding
 
 ### `nc`
-Netcat, the TCP/IP Swiss Army knife
+Netcat, the TCP/IP Swiss Army knife.
 
 ```bash
 # Manual
@@ -223,7 +224,7 @@ https://www.shodan.io/host/<IP_ADDRESS>
 Site: [shodan.io](https://www.shodan.io)
 
 ### `nmap`
-A network exploration tool and security / port scanner
+A network exploration tool and security / port scanner.
 
 Site: [nmap.org](https://nmap.org)
 
@@ -239,24 +240,24 @@ foo@bar:~$ nmap -v -A -sV 192.168.1.1
 
 A default Nmap scan with no flags will perform a TCP SYN scan of which many 
 modern firewalls and Intrusion Detection Systems (IDS) will detect, flag, 
-and log. Therefore, stealth scanning is critical to network recon
+and log. Therefore, stealth scanning is critical to network recon.
 
 Four Stealth Scans
 1. __FIN scan__: A TCP scan with only the FIN flag bits set. Exploits a 
 loophole in [TCP RFC](https://www.rfc-editor.org/rfc/rfc793.txt) compliant 
 systems in which any packets sent without SYN, ACK, or RST flags set will 
 return a RST if the port is closed. Else, the port will not respond if it 
-is open
+is open.
 
 Step 1: Nmap sends a TCP packet with the FIN flag to a target port
 
 Step 2: Nmap forms a conclusion from the reponse
 - If the port is closed, the target responds with a TCP packet with a RST
-  flag set. Nmap assigns the port state as `closed`
+  flag set. Nmap assigns the port state as `closed`.
 - If the port is opened or filtered, the target does not repond. Nmap 
-  assigns the port state as `open | filtered`
+  assigns the port state as `open | filtered`.
 - If the port is filtered, the target responds with an ICMP unreachable 
-  error. Nmap assigns the port state as `filtered`
+  error. Nmap assigns the port state as `filtered`.
 
 ```bash
 # Ex. FIN scanning ports of scanme.nmap.org
@@ -264,7 +265,7 @@ foo@bar:~$ sudo nmap -sF scanme.nmap.org
 ```
 
 2. __NULL scan__: A TCP scan with no flags set. Operates in the same manner 
-as a FIN scan
+as a FIN scan.
 
 ```bash
 # Ex. NULL scanning ports of scanme.nmap.org
@@ -272,7 +273,7 @@ foo@bar:~$ sudo nmap -sN scanme.nmap.org
 ```
 
 3. __XMAS scan__: A TCP scan with the FIN, PSH, & URG flags set. Operates 
-in the same manner as a FIN scan
+in the same manner as a FIN scan.
 
 ```bash
 # Ex. XMAS scanning ports of scanme.nmap.org
@@ -286,12 +287,12 @@ Step 1: Nmap sends a TCP packet with the SYN flag to a target port
 
 Step 2: Nmap forms a conlcusion from the response
 - If the port is closed, the target responds with a TCP packet with the 
-  RST flag set. Nmap thus assigns the port state as `closed`
+  RST flag set. Nmap thus assigns the port state as `closed`.
 - If the port is open, the target responds with a TCP packet with the 
   SYN and ACK flags set. Because Nmap, not the OS, crafted the SYN, the 
   OS does not expect the SYN/ACK response and thus sends a TCP packet
   with the RST flag set to the target port. As a result, no complete TCP
-  connection is formed. Nmap assigns the port state as `open`
+  connection is formed. Nmap assigns the port state as `open`.
 - If the port does not respond after retransmissions or responds with 
   ICMP errors, Nmap assigns the port state as `filtered`. The port may 
   therefore be filtered (e.g. by a firewall) or the network may be 
@@ -323,10 +324,10 @@ foo@bar:~$ sudo nmap -D <DECOY_1_IP>, <DECOY_2_IP>...
 ```
 
 Note: Decoy scanning can be defeated with router path tracing, 
-response-dropping, and other techniques
+response-dropping, and other techniques.
 
 Important: Must use real, live IP addresses, or else would result in an 
-accidental SYN flood
+accidental SYN flood.
 
 
 ## Network Scanning - Defense
@@ -362,10 +363,10 @@ accumulate the large packets until a buffer overflow occurs.
 
 ### Ping of Death
 Because a user can specify a packet size larger than the maximum size of 
-an IP packet, as standardized by the IP RFC, an attacker can send an ICMP 
-echo request to a machine that has no measures in place to handle cases that 
-are not RFC compliant. As the target machine fails to reassemble the packets, 
-a buffer overflow occurs.
+an IP packet, as standardized by the IP RFC, an attacker can send such ICMP 
+echo requests to a machine that has no measures in place to handle cases that 
+are outside the RFC standards. As the target machine fails to reassemble the 
+packets, a buffer overflow occurs.
 
 ### ICMP Flood
 The attacker overloads the target with a huge number of ICMP echo requests 
@@ -373,9 +374,10 @@ from spoofed source IP addresses. Because the target needs to repond to every
 request, a large enough number of requests can overload a target.
 
 > __Smurf Attack__. An old ICMP flood attack from the 1990s, significant due to 
-its use of *amplification*. Amplification increases the processing load by 
-setting the source IP address as that of the target, thus the target would 
-send replies to itself.
+its use of *amplification*. Amplification is a technique in which the target 
+receives a greater load amount than was sent by the attacker. Smurf increased 
+the processing load by setting the source IP address as that of the target, 
+thus causing the target to send replies to itself.
 
 ### UDP Flood
 Uses the same method as an ICMP flood attack, but uses UDP packets instead of 
