@@ -76,8 +76,8 @@ foo@bar:~$ sudo ifconfig -i <INTERFACE> promisc -arp
 
 
 ## Network Sniffing - Software Tools
-### `tcpdump`.
-A command-line packet analyzer
+### `tcpdump`
+A command-line packet analyzer.
 ```bash
 # Usage
 foo@bar:~$ sudo tcpdump -a <INTERFACE>
@@ -285,7 +285,7 @@ XMAS scans but is faster and does not rely on the RFC compliance loophole.
 
 Step 1: Nmap sends a TCP packet with the SYN flag to a target port
 
-Step 2: Nmap forms a conlcusion from the response
+Step 2: Nmap forms a conclusion from the response 
 - If the port is closed, the target responds with a TCP packet with the 
   RST flag set. Nmap thus assigns the port state as `closed`.
 - If the port is open, the target responds with a TCP packet with the 
