@@ -126,6 +126,9 @@ one uses on the Internet
 
 ![Diagram representing the OSI model](./media/osi-model.png)
 
+[An analogy for understanding the OSI model using
+pizza](https://www.versatek.com/blog/you-wont-believe-what-the-osi-model-and-pizza-have-in-common/)
+
 ### The Data Link Layer
 __Ethernet__: Controls how data is trasmitted over a local area network (LAN)
 - __Media Access Control (MAC) address__: A unique identifier assigned to
