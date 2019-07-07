@@ -95,6 +95,11 @@ application level. Is a newer and more comprehensive conceptual model for
 general networking systems than the TCP/IP model.
 
 ### The Seven Layers of the OSI Model
+__P__lease __D__o __N__ot __T__each __S__tudents __P__ointless __A__cronyms 
+(Source: [Louis
+Cremen](https://hackernoon.com/10-things-infosec-professionals-need-to-know-about-networking-d159946efc93)
+)
+
 1. __Physical__: Lowest level; communicates bit streams over a physical medium 
     - e.g. Ethernet cable, wires
 
