@@ -95,7 +95,7 @@ application level. Is a newer and more comprehensive conceptual model for
 general networking systems than the TCP/IP model.
 
 ### The Seven Layers of the OSI Model
-__P__ lease __D__ o __N__ ot __T__ each __S__ tudents __P__ ointless 
+**P**lease __D__ o __N__ ot __T__ each __S__ tudents __P__ ointless 
 __A__ cronyms 
 (Source: [Louis
 Cremen](https://hackernoon.com/10-things-infosec-professionals-need-to-know-about-networking-d159946efc93)
