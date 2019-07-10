@@ -47,7 +47,7 @@ __Base64__: TODO
 ## The Cryptosystem
 TODO
 
-[Mathematical definition of a cryptosystem](./media/cryptosystem.png)
+[!Mathematical definition of a cryptosystem](./media/cryptosystem.png)
 
 ## Keys
 In the context of cryptography, a key defines the transformation 
@@ -57,17 +57,19 @@ For decryption algorithms, the key specifies the transformation
 *from* ciphertext *to* plaintext.
 
 > 2. Il faut qu’[un système cryptographique] n’exige pas le secret, 
-et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi
-- Auguste Kerckhoffs, [‘La cryptographie
-  militaire’](https://petitcolas.net/kerckhoffs/la_cryptographie_militaire_i.htm)
+et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi.
+__Auguste Kerckhoffs, [‘La cryptographie
+  militaire’](https://petitcolas.net/kerckhoffs/la_cryptographie_militaire_i.htm)__
 
 TODO
 
 ### Uses of Keys
 **_The Caesar Cipher_**
+
 TODO
 
 **_One-Time Pad (OTP)_**
+
 TODO
 
 
@@ -80,32 +82,40 @@ symmetric-key algorithms, and public-key algorithms.
 TODO
 
 **_MD5 (Insecure)_**
+
 TODO
 
 **_SHA1 (Insecure)_**
+
 TODO
 
-**_SHA256 & SHA512)**
+**_SHA256 & SHA512_**
+
 TODO
 
 ### Symmetric-Key Algorithms
 TODO
 
 **_DES_**
+
 TODO
 
 **_AES_**
+
 TODO
 
 **_RC4_**
+
 TODO
 
 ### Public-Key Algorithms
 TODO
 
-**_Diffie-Hellman_**
+**_Diffie-Hellman (DH)_**
+
 TODO
 
 **_RSA_**
+
 TODO
 
