@@ -20,4 +20,8 @@
 
 ## [Cryptography and Cyber Security](./notes-04-using-crypto.md#cryptography-and-cybersecurity)
 
+[Cryptography and Networks](./notes-04-using-crypto.md#cryptography-and-networks)
+
+[Password Cracking](./notes-04-using-crypto.md#password-cracking)
+
 
