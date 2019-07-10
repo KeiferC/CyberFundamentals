@@ -30,6 +30,7 @@ Increasing?](./notes-00-intro.md#the-trinity-of-trouble---why-are-cyber-threats-
 
 [The OSI Model vs the TCP/IP Model](./notes-01-networking.md#the-osi-model-vs-the-tcpip-model)
 
+
 ## [Network Security](./notes-02-netsec.md#network-security)
 
 [Ways of Attacking Networks](./notes-02-netsec.md#ways-of-attacking-networks)
