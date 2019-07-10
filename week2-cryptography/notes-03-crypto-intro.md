@@ -47,7 +47,7 @@ __Base64__: TODO
 ## The Cryptosystem
 TODO
 
-[!Mathematical definition of a cryptosystem](./media/cryptosystem.png)
+![Mathematical definition of a cryptosystem](./media/cryptosystem.png)
 
 ## Keys
 In the context of cryptography, a key defines the transformation 
@@ -56,7 +56,7 @@ key specifies the transformation *from* plaintext *to* ciphertext.
 For decryption algorithms, the key specifies the transformation 
 *from* ciphertext *to* plaintext.
 
-> 2. Il faut qu’[un système cryptographique] n’exige pas le secret, 
+> Il faut qu’[un système cryptographique] n’exige pas le secret, 
 et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi.
 __Auguste Kerckhoffs, [‘La cryptographie
   militaire’](https://petitcolas.net/kerckhoffs/la_cryptographie_militaire_i.htm)__
