@@ -57,13 +57,14 @@ For decryption algorithms, the key specifies the transformation
 *from* ciphertext *to* plaintext.
 
 > Il faut qu’[un système cryptographique] n’exige pas le secret, 
-et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi. - __Auguste Kerckhoffs, [‘La cryptographie
-  militaire’](https://petitcolas.net/kerckhoffs/la_cryptographie_militaire_i.htm)__
+et qu’il puisse sans inconvénient tomber entre les mains de l’ennemi. -
+__Auguste Kerckhoffs, ["La cryptographie
+  militaire"](https://petitcolas.net/kerckhoffs/la_cryptographie_militaire_i.htm)__
 
 In English:
 > It is paramount that a cryptosystem does not rely on its key, and that 
 there would be no problems if the cryptosystem falls into the hands of the 
-enemy. - __Auguste Kerckhoffs, Military Cryptography__
+enemy. - __Auguste Kerckhoffs, "Military Cryptography"__
 
 In other words, a good cryptosystem maintains security in the hands of 
 others, as long as the key is kept safe.
