@@ -1,0 +1,48 @@
+%
+%       filename:       cryptosystem.tex
+%       author:         @KeiferC
+%       date:           09 July 2019
+%       version:        0.0.1
+%
+%       description:    Used to render math equations
+%                       relating to crypto/
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preamble
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage[mathscr]{euscript}
+
+% Page Layout
+\setlength{\headheight}{12pt}
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Cryptosystem
+\begin{align*}
+        \text{Cryptosystem} &= \mathscr{(P, C, K, E, D)} \\
+        \mathscr{P} &= \text{plaintext space} \\
+        \mathscr{C} &= \text{ciphertext space} \\
+        \mathscr{K} &= \text{key space} \\
+        \mathscr{E} &= \{E_k\ |\ k \in \mathscr{K}, 
+                         E_k : \mathscr{P} \rightarrow 
+                        \mathscr{C})\} \\
+        \mathscr{D} &= \{D_k\ |\ k \in \mathscr{K},
+                         D_k : \mathscr{C} \rightarrow
+                         \mathscr{P}\} \\
+        \forall\ e \in \mathscr{K}, \exists\ d \in \mathscr{K} 
+        &\ni D_d(E_e(p)) = p, \forall\ p \in \mathscr{P}
+\end{align*}
+
+\end{document}
