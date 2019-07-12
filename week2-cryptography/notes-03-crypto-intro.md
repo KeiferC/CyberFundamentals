@@ -66,6 +66,26 @@ in ciphertext, keys, encryption functions, and decryption functions.
 
 ![Mathematical definition of a cryptosystem](./media/cryptosystem.png)
 
+### Evaluating the Security of a Cryptosystem
+There only exists one perfectly secure algorithm: the One-Time Pad (OTP). 
+All other crypto algorithms are not perfectly secure. However, they 
+do not need to be perfectly secure; they just need to be secure enough 
+to the point where attempting to break the cipher is just not worth it.
+In other words, to evaluate the security of a cryptosystem is to make a 
+cost-benefits analysis of the system in question, The higher the ratio 
+of cost to benefits, the more secure the algorithm is. There are two 
+main tradeoffs to be considered regarding cipher breaking:
+
+1. When the cost of breaking the cipher exceeds the value of the 
+   encrypted information.
+
+2. When the time required the break the cipher exceeds the useful 
+   lifetime of the information.
+
+However, it is difficult to estimate the cost and time required to 
+break a cipher. Where brute-forcing may take several lifetimes, stealing 
+a key may take several minutes.
+
 ## Keys
 In the context of cryptography, a key defines the transformation 
 between plaintext and ciphertext. For encryption algorithms, the 
@@ -108,7 +128,8 @@ the Caesar cipher if one does not know how many spaces the alphabet was
 rotated. In the case of a ROT13 cipher, once one realizes that the 
 alphabet was rotated 13 spaces, it becomes fairly easy to decode.
 
-The number of spaces the alphabet is rotated is the key.
+The number of spaces the alphabet is rotated is the key. Therefore, the 
+ROT13 cipher contains the key 'k' = 13.
 
 **_One-Time Pad (OTP)_**
 
