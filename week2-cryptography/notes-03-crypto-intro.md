@@ -49,7 +49,20 @@ printable (text) characters
 
 
 ## The Cryptosystem
-TODO
+A cryptosystem can be formalized as a tuple consisting of 5 elements: 
+P, C, K, E, and D (see mathematical definition below). 'P' represents 
+a set containing information in plaintext. 'C' represents a set 
+containing information in ciphertext. 'K' represents a set containing 
+keys. 'E' represents a set of functions such that for every key 'k', 
+there exists a function from 'P' to 'C'. In other words, E represents 
+a set of functions, each corresponding to a unique key, who encrypt 
+information in plaintext. 'D' represents a set of functions such that 
+for every key 'k', there exists a function from 'C' to 'P'. In other 
+words, 'D' represents a set of funcions, each corresponding to a 
+unique key, who decrypts information in ciphertext.
+
+Therefore, a cryptosystem contains information in plaintext, information 
+in ciphertext, keys, encryption functions, and decryption functions.
 
 ![Mathematical definition of a cryptosystem](./media/cryptosystem.png)
 
@@ -70,8 +83,8 @@ In English:
 there would be no problems if the cryptosystem falls into the hands of the 
 enemy. - __Auguste Kerckhoffs, "Military Cryptography"__
 
-In other words, a good cryptosystem maintains security in the hands of 
-others, as long as the key is kept safe.
+In other words, a good cryptosystem maintains security, even in the hands 
+of others, as long as the key is kept safe.
 
 ### Uses of Keys
 **_The Caesar Cipher_**
