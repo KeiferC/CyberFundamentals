@@ -17,31 +17,35 @@
 
 
 ## Why Cryptography?
-TODO
+The "C" and the "I" in the CIA Triad
 
 
 ## The Golden Rule
-TODO
-
+DON'T ROLL YOUR OWN CRYPTO!!!
 
 ## What Is Cryptography?
-__Cryptography__: TODO
+__Cryptography__: The process of communicating secretly through the use 
+of ciphers
 
-__Cryptanalysis__: TODO
+__Cryptanalysis__: The process of cracking or deciphering encrypted info
 
-__Cryptology__: TODO
+__Cryptology__: The study of cryptography or cryptanalysis
 
-__Cleartext / plaintext__: TODO
+__Cleartext / plaintext__: Unencrypted infomation
 
-__Encrypt__: TODO
+__Encrypt__: To convert info or data into code to prevent unauthorized
+access
 
-__Decrypt__: TODO
+__Decrypt__: To convert an encoded or unclear message into plaintext
 
-__Cipher__: TODO
+__Cipher__: An algorithm to perform encryption and / or decryption
 
-__Cryptosystem__: TODO
+__Cryptosystem__: A suite of algorithms used to perform encryption and / or 
+decryption
 
-__Base64__: TODO
+__Base64__: An encoding scheme used for representing binary data using 
+printable (text) characters
+- Used for HTTP Basic Authentication
 
 
 ## The Cryptosystem
