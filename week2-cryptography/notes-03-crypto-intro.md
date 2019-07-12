@@ -89,7 +89,26 @@ of others, as long as the key is kept safe.
 ### Uses of Keys
 **_The Caesar Cipher_**
 
-TODO
+The Caesar cipher is a simple encryption algorithm used by Julius Ceasar to
+protect his correspondances. To encrypt information, one would rotate the 
+alphabet by a certain number, therefore mapping each "real" letter with 
+a "fake" letter. For example, the ROT13 cipher is a version of the Caesar 
+cipher in which the alphabet is rotated 13 spaces
+
+Let 'A' = 1, 'B' = 2, ..., 'Z' = 26. To encrypt, one rotates the alphabet 
+13 spaces so that 'A' = 13, 'B' = '14', ..., 'Z' = 12. Next, one maps the 
+the old alphabet to the new alphabet such that a letter in the old 
+alphabet replaces its corresponding letter in the new alphabet. For 
+example, in the old alphabet, 'M' = 13. Therefore, 'M' will replace 'A' 
+in the encrypted text. Hence, if I were to encrypt "ABC" using ROT13,
+the resulting string would be "MNO". 
+
+It is somewhat a pain trying to decode a piece of text encrypted using 
+the Caesar cipher if one does not know how many spaces the alphabet was 
+rotated. In the case of a ROT13 cipher, once one realizes that the 
+alphabet was rotated 13 spaces, it becomes fairly easy to decode.
+
+The number of spaces the alphabet is rotated is the key.
 
 **_One-Time Pad (OTP)_**
 
