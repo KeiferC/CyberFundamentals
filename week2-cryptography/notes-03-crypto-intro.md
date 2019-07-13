@@ -142,7 +142,39 @@ There are three main types of encryption algorithms: one-way algorithms,
 symmetric-key algorithms, and public-key algorithms.
 
 ### One-Way Algorithms
-TODO
+AKA hash functions, such algorithms are one-way as they can only encrypt 
+information, not decrypt. Therefore there is no secret key. The function 
+maps a variable length string of data to produce a fixed-length output 
+in a deterministic, public, and random manner,
+
+The perfect hash faction
+- Is one-way, and thus not decryptable
+- Contains no collisions
+- Exhibits true randomness
+- Contains pre-image resistance, making it unfeasible to produce the entire
+  hash space
+- Makes it unfeasible to produce a string, given a hash result
+
+Pros
+- Good for verifying integrity
+
+Cons
+- MD5 (128-bit hash values) is not collision-resistant
+- SHA1 (160-bit has value) is not collision-resistant
+
+Uses
+- For password storage
+- As a checksum of software packages
+- As digital signatures
+- As Git commits
+
+Example - Verifying the Integrity of a Download
+```bash
+foo@bar:~$ shasum -a 256 <EXCECUTABLE>
+```
+
+If the result does not match the provided checksum (SHA256 in this case), 
+the download is either corrupted or was tampered.
 
 **_MD5 (Insecure)_**
 
