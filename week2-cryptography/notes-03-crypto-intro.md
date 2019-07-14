@@ -59,7 +59,7 @@ a set of functions, each corresponding to a unique key, who encrypt
 information in plaintext. 'D' represents a set of functions such that 
 for every key 'k', there exists a function from 'C' to 'P'. In other 
 words, 'D' represents a set of funcions, each corresponding to a 
-unique key, who decrypts information in ciphertext.
+unique key, who decrypt information in ciphertext.
 
 Therefore, a cryptosystem contains information in plaintext, information 
 in ciphertext, keys, encryption functions, and decryption functions.
@@ -189,7 +189,21 @@ TODO
 TODO
 
 ### Symmetric-Key Algorithms
-TODO
+Symmetric-key algorithms use a single key between a pair of encryption and 
+decryption functions. In other words, A file encrypted with a key 'k' is 
+also decrypted with the key 'k'. An example of a symmetric-key algorithm is 
+the OTP.
+
+Pros
+- Fast
+- A modified key 'k' will result in garbage plaintext after decryption
+
+Cons
+- Security depends on the secrecy of the key
+- Not good for authenticity
+
+Uses
+- Password protecting a ZIP file using AES
 
 **_DES_**
 
@@ -204,11 +218,40 @@ TODO
 TODO
 
 ### Public-Key Algorithms
-TODO
+AKA asymmetric-key algorithms, public-key algorithms use keys, a public 
+key (of which anyone can have), and a private key (of which should be 
+unique to each user). A public key is used for encryption whilst a 
+private key is used for decryption. Therefore, if one wishes to send 
+an encrypted email to another, they would first both agree on a 
+cryptosystem. Next, they share their public keys with each other.
+Person A encrypts an email using Person B's public key. Person B decrypts 
+the email with their own private key. 
+
+Pros
+- Public key can safely be distributed in any way possible
+- Confidentiality - only the holder of the private key can decrypt
+- Integrity - Any modification of the message would be evident during
+  the decryption process
+- Non-repudiation - each individual can prove who the originator of a
+  message is
+
+Cons
+- No authentication - anyone can encrypt a message given a public key
+- Is still vulnerable to a MITM attack
+
+Uses
+- SSL / TLS
+- SSH and SSH keys (public key stored on server while client keeps private 
+  key)
+- PGP (Pretty Good Privacy)
+- GPG (formerly known as OpenPGP)
+- Bitcoin
+
 
 **_Diffie-Hellman (DH)_**
 
-TODO
+The Diffie-Hellman key exchange is a method of exchanging cryptographic 
+keys via public and insecure channels. TODO
 
 **_RSA_**
 
