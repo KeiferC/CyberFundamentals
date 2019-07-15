@@ -247,7 +247,6 @@ Uses
 - GPG (formerly known as OpenPGP)
 - Bitcoin
 
-
 **_Diffie-Hellman (DH)_**
 
 The Diffie-Hellman key exchange is a method of exchanging cryptographic 

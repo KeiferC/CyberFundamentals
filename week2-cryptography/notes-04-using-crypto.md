@@ -10,7 +10,6 @@
 
 ## Cryptography and Networks
 ### Transport Layer Security (TLS)
-TODO
 
 
 ## Password Cracking
