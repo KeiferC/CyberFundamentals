@@ -133,7 +133,11 @@ ROT13 cipher contains the key 'k' = 13.
 
 **_One-Time Pad (OTP)_**
 
-TODO
+The One-Time Pad is an uncrackable encryption technique whose security 
+relies on the complexity of the key. Specifically, the key is a one-use 
+only, pre-shared key that is truly random, at least as long as the 
+plaintext, never reused, and kept secret. However, OTP encryption is 
+unviable, as secure key distribution is very difficult to do.
 
 
 ## Encryption Algorithms
@@ -176,17 +180,11 @@ foo@bar:~$ shasum -a 256 <EXCECUTABLE>
 If the result does not match the provided checksum (SHA256 in this case), 
 the download is either corrupted or was tampered.
 
-**_MD5 (Insecure)_**
+**_MD5 (Insecure)_**: [RFC 1321](https://tools.ietf.org/pdf/rfc1321.pdf)
 
-TODO
+**_SHA1 (Insecure)_**: [RFC 3174](https://tools.ietf.org/pdf/rfc3174.pdf)
 
-**_SHA1 (Insecure)_**
-
-TODO
-
-**_SHA256 & SHA512_**
-
-TODO
+**_SHA256 & SHA512_**: [RFC 4634](https://tools.ietf.org/pdf/rfc4634.pdf)
 
 ### Symmetric-Key Algorithms
 Symmetric-key algorithms use a single key between a pair of encryption and 
@@ -205,17 +203,12 @@ Cons
 Uses
 - Password protecting a ZIP file using AES
 
-**_DES_**
+**_DES (Deprecated)_**: [FIPS
+46-3](https://csrc.nist.gov/csrc/media/publications/fips/46/3/archive/1999-10-25/documents/fips46-3.pdf)
 
-TODO
+**_AES_**: [FIPS 197](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf)
 
-**_AES_**
-
-TODO
-
-**_RC4_**
-
-TODO
+**_RC4 (Insecure)_**: [RFC 7465](https://tools.ietf.org/pdf/rfc7465.pdf) 
 
 ### Public-Key Algorithms
 AKA asymmetric-key algorithms, public-key algorithms use keys, a public 
@@ -250,9 +243,30 @@ Uses
 **_Diffie-Hellman (DH)_**
 
 The Diffie-Hellman key exchange is a method of exchanging cryptographic 
-keys via public and insecure channels. TODO
+keys via public and insecure channels.
 
-**_RSA_**
+Step 1 (The Setup): Person A and Person B publically agree on an unique 
+and abitrary constant (e.g. modulus 'p' = 23 and base 'g' = 5). Each 
+person combines the established constant with their own secret (e.g. 
+secret 's' = 4, such that the combined result = g^s mod p = 5^4 mod 23 
+= 4). 
 
-TODO
+Step 2 (Sharing is Caring): Person A and Person B publically share their 
+combined results with each other. Let Person A have the secret 's' = 4 so 
+that the resulting combination value is 5^4 mod 23 = 4. Person A would 
+send Person B the number 4. Person B would send their own resulting value 
+to Person A.
+
+Step 3 (The Magic): Each person combines their own secret with the value 
+that they received from the other. Because of some mathematical magic, 
+they both end up with the same value, which becomes their shared key.
+
+Therefore, the individuals aren't really exchanging keys publically, but 
+are instead creating a key together.
+
+*The Paint Analogy*
+![A diagram describing the DH key exchange process as outlined above, using 
+color-mixing instead of numbers](./media/dh-key-ex.png)
+
+**_RSA_**: [RFC 3447](https://tools.ietf.org/pdf/rfc3447.pdf)
 
