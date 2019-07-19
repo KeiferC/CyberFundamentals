@@ -240,6 +240,8 @@ Uses
 - GPG (formerly known as OpenPGP)
 - Bitcoin
 
+**_RSA_**: [RFC 3447](https://tools.ietf.org/pdf/rfc3447.pdf)
+
 **_Diffie-Hellman (DH)_**
 
 The Diffie-Hellman key exchange is a method of exchanging cryptographic 
@@ -267,6 +269,4 @@ are instead creating a key together.
 *The Paint Analogy*
 ![A diagram describing the DH key exchange process as outlined above, using 
 color-mixing instead of numbers](./media/dh-key-ex.png)
-
-**_RSA_**: [RFC 3447](https://tools.ietf.org/pdf/rfc3447.pdf)
 
