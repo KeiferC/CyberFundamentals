@@ -15,4 +15,5 @@
 
 [Cryptography and Cyber Security](./week2-cryptography#week-2---cryptography/notes-04-using-crypto.md#cryptography-and-cybersecurity)
 
-
+*The Cyber Kill Chain* ([Source](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html))
+![The Cyber Kill Chain](./media/ckc.png)
