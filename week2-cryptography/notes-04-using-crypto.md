@@ -106,11 +106,20 @@ Good database of wordlists:
 
 **_Rainbow Table Attack_**
 
-TODO
+A rainbow table is a pre-computed lookup table containing hash values that 
+are pre-matched to possible plaintext passwords. An attacker using a rainbow 
+table does not need to retrieve the actual plaintext password, but simply 
+needs to find a hash that matches the plaintext password. Rainbow table 
+attacks are faster than classic brute-forcing techniques, yet they require 
+much more storage. 
+
+To defend against rainbow table attacks, use a KDF with long salts.
 
 **_Spidering_**
 
-TODO
+Spidering is a technique in which attackers use web spiders to crawl 
+websites for information that may be useful for guessing passwords / 
+prioritizing passwords to test.
 
 ### Tools
 **_John the Ripper_**
