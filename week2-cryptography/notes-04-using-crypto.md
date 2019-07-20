@@ -44,6 +44,46 @@ __`/etc/passwd`__ contains users' information and is required for logins,
 
 __`/etc/shadow`__ contains users' encrypted passwords and related details.
 
+The shadow file contains one entry per line in the format:
+
+```bash
+<a>:$<b>$<c>$<d>:<e>:<f>:<g>:<h>:<i>:<j>:<k>
+
+<a>     Username
+<b>     Encryption algorithm ID number
+                1       = MD5
+                2       = Blowfish
+                2a      = eksBlowfish
+                5       = SHA-256
+                6       = SHA-512
+<c>     Salt value
+<d>     Hashed password and salt value
+<e>     Days since 1 Jan. 1970 since the password was last changed
+<f>     Minimum # of days required between password changes
+<g>     Maximum # of days for the password to remain valid
+<h>     # of days before password expiration date to warn user
+<i>     # of days that the account has been disabled after expiration date
+<j>     # of days since 1 Jan. 1970 since the expiration date
+<k>     Unused field / reserved for future use
+
+Ex.
+root:$6$fnfffc$ljkFAfhlewFASDXf.#af:13064:0:99999:7:::
+
+Username:       root
+Algorithm:      SHA-512
+Salt:           fnfffc
+Hashed:         ljkFAfhlewFASDXf.#af
+...
+
+Note:           If the password field starts with an exclamation mark
+                (e.g. root:!$6$fnfffc$ljkFAfhlewFASDXf.#af:...), the 
+                password is locked and the user cannot use it to login.
+
+                If the password field contains an asterisk
+                (e.g. root:*:...), the account is also locked, but the 
+                password is hidden.
+```
+
 ### Techniques
 **_Brute-Force Attack_**
 
@@ -51,7 +91,7 @@ The attacker systematically submits all possible passwords and usernames
 until the correct one is found. The time it takes to find the correct 
 passwords is an exponential function of the length of the password. The 
 attacker can also focus on determining the key (often generated using a 
-key derivation function (KDF). Successful brute-forcing is dependent on 
+key derivation function (KDF)). Successful brute-forcing is dependent on 
 prioritizing values to test, time, processing power, and energy efficiency.
 
 **_Dictionary Attack_**
