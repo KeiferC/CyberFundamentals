@@ -23,6 +23,7 @@ The "C" and the "I" in the CIA Triad
 ## The Golden Rule
 DON'T ROLL YOUR OWN CRYPTO!!!
 
+
 ## What Is Cryptography?
 __Cryptography__: The process of communicating secretly through the use 
 of ciphers
@@ -85,6 +86,7 @@ main tradeoffs to be considered regarding cipher breaking:
 However, it is difficult to estimate the cost and time required to 
 break a cipher. Where brute-forcing may take several lifetimes, stealing 
 a key may take several minutes.
+
 
 ## Keys
 In the context of cryptography, a key defines the transformation 
