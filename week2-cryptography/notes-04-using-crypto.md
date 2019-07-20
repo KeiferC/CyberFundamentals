@@ -124,20 +124,46 @@ prioritizing passwords to test.
 ### Tools
 **_John the Ripper_**
 
-TODO
+A free password cracking tool.
+
+Site: [openwall.com/john](https://www.openwall.com/john/)
+
+```bash
+# Usage
+foo@bar:~$ unshadow passwd shadow > crackme.txt # merges into txt file
+foo@bar:~$ john crackme.txt
+foo@bar:~$ john --wordlist=<FILE> crackme.txt # uses given wordlist
+```
 
 **_Cain & Abel_**
 
-TODO
+A password recovery tool for Microsoft Operating Systems.
+
+Site:
+[oxid.it](https://web.archive.org/web/20190603235413/http://www.oxid.it/cain.html)
+(archived)
 
 **_Hashcat_**
 
-TODO
+FOSS password cracker.
+
+Site: [hashcat.net](https://hashcat.net/hashcat/)
 
 **_THC Hydra_**
 
-TODO
+Another FOSS password cracker.
+
+Site: [sectools,org](https://sectools.org/tool/hydra/)
 
 **_L0phtCrack_**
 
-TODO
+A powerful commercial password cracker,
+
+Site: [l0phtcrack.com](https://www.l0phtcrack.com/)
+
+**_RainbowCrack_**
+
+A free rainbow table used for cracking passwords.
+
+Site: [project-rainbowcrack.com](http://project-rainbowcrack.com/)
+
