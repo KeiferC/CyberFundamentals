@@ -149,7 +149,13 @@ symmetric-key algorithms, and public-key algorithms.
 AKA hash functions, such algorithms are one-way as they can only encrypt 
 information, not decrypt. Therefore there is no secret key. The function 
 maps a variable length string of data to produce a fixed-length output 
-in a deterministic, public, and random manner,
+in a deterministic, public, and random manner. 
+
+Many one-way algorithms use __salts__ to better secure their stored values. 
+Salts are unique, random data that are appended to the end of a value before 
+hashing and storing. Therefore, if two users store the same password, the 
+hashed values stored would be different, as they both contain different salts.
+NEVER reuse your salts and make sure they aren't too short.
 
 The perfect hash faction
 - Is one-way, and thus not decryptable
