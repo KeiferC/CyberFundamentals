@@ -45,15 +45,30 @@ __`/etc/passwd`__ contains users' information and is required for logins,
 __`/etc/shadow`__ contains users' encrypted passwords and related details.
 
 ### Techniques
-**_Brute-forcing_**
+**_Brute-Force Attack_**
+
+The attacker systematically submits all possible passwords and usernames 
+until the correct one is found. The time it takes to find the correct 
+passwords is an exponential function of the length of the password. The 
+attacker can also focus on determining the key (often generated using a 
+key derivation function (KDF). Successful brute-forcing is dependent on 
+prioritizing values to test, time, processing power, and energy efficiency.
+
+**_Dictionary Attack_**
+
+A dictionary attack is a type of brute-force attack in which the attacker 
+tests all values in a list of strings (e.g. a dictionary), AKA a wordlist. 
+Wordlists may consist of previously cracked credentials or keys, commonly 
+used credentials, etc.
+
+Good database of wordlists:
+[SecLists](https://github.com/danielmiessler/SecLists)
+
+**_Rainbow Table Attack_**
 
 TODO
 
-**_Using Wordlists_**
-
-TODO
-
-**_Using Rainbow Tables_**
+**_Spidering_**
 
 TODO
 
