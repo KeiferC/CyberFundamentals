@@ -37,13 +37,9 @@ Any password is crackable given enough time.
 ### Locations
 There are two files of interest on a typical Linux system:
 
-__`/etc/passwd`__
+__`/etc/passwd`__ contains users' information and is required for logins,
 
-TODO
-
-__`/etc/shadow`__
-
-TODO
+__`/etc/shadow`__ contains users' encrypted passwords and related details.
 
 ### Techniques
 **_Brute-forcing_**
