@@ -46,7 +46,7 @@ __`/etc/shadow`__ contains users' encrypted passwords and related details.
 
 The shadow file contains one entry per line in the format:
 
-```bash
+```
 <a>:$<b>$<c>$<d>:<e>:<f>:<g>:<h>:<i>:<j>:<k>
 
 <a>     Username
