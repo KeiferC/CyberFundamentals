@@ -20,7 +20,10 @@ Diffie-Hellman (DHE) key exchange during the TLS handshake,
 
 Integrity - TLS uses asymmetric cryptography to ensure data integrity 
 by using public keys to determine the authenticity of the communicating 
-computers. 
+computers. In regards to web browsing, the browser stores public keys 
+corresponding to trusted sources. The public keys are used to verify the 
+identity of a website by decrypting the website TLS certificate's 
+private key (issued by the Certificate Authority).
 
 TLS consists of two protocols, the TLS handshake and the TLS record: 
 
