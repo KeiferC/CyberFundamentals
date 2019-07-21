@@ -64,8 +64,9 @@ looks up the actual IP address that corresponds to the readable string
 ## The Hypertext Tranfer Protocol (HTTP)
 
 The Hypertext Transfer Protocol is a layer 7 (application) protocol that 
-specifies how data is communicated through the Web. Note: HTTPS is HTTP on 
-a TLS / SSL session.
+specifies how data is communicated through the Web.
+
+Note: HTTPS is HTTP on a TLS / SSL session.
 
 HTTP consists of two main processes: request and response.
 
