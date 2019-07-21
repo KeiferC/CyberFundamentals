@@ -40,7 +40,7 @@ Any password is crackable given enough time.
 ### Locations
 There are two files of interest on a typical Linux system:
 
-__`/etc/passwd`__ contains users' information and is required for logins,
+__`/etc/passwd`__ contains users' information and is required for logins.
 
 __`/etc/shadow`__ contains users' encrypted passwords and related details.
 
