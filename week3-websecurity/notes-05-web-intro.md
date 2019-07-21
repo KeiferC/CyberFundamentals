@@ -74,15 +74,11 @@ HTTP consists of two main processes: request and response.
 An HTTP request is a message a client sends to a server. It consists of 
 two main components: the HTTP request header and the HTTP request body.
 
-*HTTP Request Header*
+__HTTP Request Header__: Contains details regarding the request, including
+the method being used (e.g. GET, POST, DELETE, TRACE, etc.).
 
-Contains details regarding the request, including the method being used 
-(e.g. GET, POST, DELETE, TRACE, etc.).
-
-*HTTP Request Body*
-
-Consists of data to be send to the server (including query string key-value 
-pairs)
+__HTTP Request Body__: Consists of data to be send to the server (including
+query string key-value pairs)
 
 Example HTTP Request:
 ```
@@ -104,13 +100,14 @@ key=value&second-key=second-value
 ### HTTP Response
 TODO
 
-*HTTP Response Header*
+__HTTP Response Header__: TODO
 
+__HTTP Response Body__: TODO
+
+Example HTTP Response:
+```
 TODO
-
-*HTTP Response Body*
-
-TODO
+```
 
 ### HTTP Cookies
 TODO
