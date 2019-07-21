@@ -71,7 +71,7 @@ Note: HTTPS is HTTP on a TLS / SSL session.
 HTTP consists of two main processes: request and response.
 
 ### HTTP Request
-An HTTP request is a message a client sends to a server. It consists of 
+A HTTP request is a message a client sends to a server. It consists of 
 two main components: the HTTP request header and the HTTP request body.
 
 __HTTP Request Header__: Contains details regarding the request, including
@@ -98,7 +98,9 @@ key=value&second-key=second-value
 ```
 
 ### HTTP Response
-TODO
+A HTTP response is a message a server sends to a client in response to a 
+HTTP request. It consists of two main components: the HTTP response header 
+and the HTTP response body.
 
 __HTTP Response Header__: TODO
 
