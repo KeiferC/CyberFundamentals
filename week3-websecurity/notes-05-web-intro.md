@@ -54,7 +54,7 @@ https://www.google.com/search?q=bob+ross&lr=lang_zh-TW
 ```
 
 Note: the server name / domain name is often input as an easily read 
-string (e.g. "duckduckgo.com). Once the user presses the "enter" button, 
+string (e.g. "duckduckgo.com"). Once the user presses the "enter" button, 
 the domain name gets sent to a Domain Name System (DNS) server of which 
 looks up the actual IP address that corresponds to the readable string 
 (e.g. 107.20.240.232). A user can also enter the IP address by itself 
@@ -71,15 +71,35 @@ Note: HTTPS is HTTP on a TLS / SSL session.
 HTTP consists of two main processes: request and response.
 
 ### HTTP Request
-TODO
+An HTTP request is a message a client sends to a server. It consists of 
+two main components: the HTTP request header and the HTTP request body.
 
 *HTTP Request Header*
 
-TODO
+Contains details regarding the request, including the method being used 
+(e.g. GET, POST, DELETE, TRACE, etc.).
 
 *HTTP Request Body*
 
-TODO
+Consists of data to be send to the server (including query string key-value 
+pairs)
+
+Example HTTP Request:
+```
+POST https://github.com HTTP/1.1
+Host: github.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+If-None-Match: "bfc13a64729c4290ef5b2c2730249c88ca92d82d"
+Cache-Control: max-age=0
+
+key=value&second-key=second-value
+```
 
 ### HTTP Response
 TODO
