@@ -15,6 +15,15 @@
 
 [Cryptography and Cyber Security](./week2-cryptography#week-2---cryptography/notes-04-using-crypto.md#cryptography-and-cybersecurity)
 
+
+### [Week 3 - Web Security](./week3-websecurity#week-3---web-security)
+
+[The
+Web](./week3-websecurity#week-3---web-security/notes-05-web-intro.md#the-web)
+
+[Web
+Security](./week3-websecurity#week-3---web-security/notes-06-websec.md#web-security)
+
 ---
 
 *The Cyber Kill Chain* ([Source](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html))
