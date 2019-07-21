@@ -108,7 +108,24 @@ __HTTP Response Body__: TODO
 
 Example HTTP Response:
 ```
-TODO
+HTTP/2.0 418 I'm a teapot.
+content-type: text/html; charset=UTF-8
+trailer: X-Google-GFE-Current-Request-Cost-From-GWS
+strict-transport-security: max-age=31536000
+content-encoding: br
+date: Tue, 20 April 1971 00:00:00 UTC
+server: gws
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: quic=":443"; ma=2592000; v="46,43,39"
+X-Firefox-Spdy: h2
+
+<!doctype html><html lang="en"> <meta charset="utf-8"><meta
+content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+<title>Error 418 (I’m a teapot)!?</title><b>418.</b> <ins>I’m a
+teapot.</ins></p> <p>The requested entity body is short and stout. <ins>Tip me
+over and pour me out.</ins></p> <div id="teaset"><div id="teabot"></div><div
+id="teacup"></div></div></html>
 ```
 
 ### HTTP Cookies
