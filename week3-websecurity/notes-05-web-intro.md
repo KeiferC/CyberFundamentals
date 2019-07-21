@@ -53,7 +53,7 @@ https://www.google.com/search?q=bob+ross&lr=lang_zh-TW
 [#fragment]     
 ```
 
-Note: the server name / domain name is often inputted in as an easily read 
+Note: the server name / domain name is often input as an easily read 
 string (e.g. "duckduckgo.com). Once the user presses the "enter" button, 
 the domain name gets sent to a Domain Name System (DNS) server of which 
 looks up the actual IP address that corresponds to the readable string 
