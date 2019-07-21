@@ -19,10 +19,10 @@
 ### [Week 3 - Web Security](./week3-websecurity#week-3---web-security)
 
 [The
-Web](./week3-websecurity#week-3---web-security/notes-05-web-intro.md#the-web)
+Web](./week3-websecurity/notes-05-web-intro.md#the-web)
 
 [Web
-Security](./week3-websecurity#week-3---web-security/notes-06-websec.md#web-security)
+Security](./week3-websecurity/notes-06-websec.md#web-security)
 
 ---
 
