@@ -162,7 +162,8 @@ the DNS as a yellow pages book.
 ### The Server
 The server (e.g. Apache HTTP, Nginx) handles the logic tier of the 
 three-tier architecture. This tier's principle role is to process 
-information and requests sent from the client. 
+information and requests sent from the client. When requested, the 
+server also retrieves information from a database to be processed.
 
 Web servers are built using server-side web frameworks like Node.js, 
 Django, and Laravel.
@@ -171,5 +172,8 @@ Django, and Laravel.
 TODO
 
 ### The Three-Tier Architecture
-TODO : Insert diagram
+Source:
+[Wikimedia](https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg)
 
+![Diagram depicting the three-tier architecture as described
+above](./media/3ta.png)
