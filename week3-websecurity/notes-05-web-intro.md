@@ -134,22 +134,42 @@ TODO
 
 ## Websites
 
-In general, the infrastructure of a website consists of three components: 
+In general, the architecture of a website consists of three tiers: 
 the client, the server, and the database.
 
 ### The Client
-TODO
+The client (e.g. browser) handles the presentation tier of the
+three-tier architecture. This tier's principle role is to display 
+information (e.g. a web page) to the user. If the client submits 
+information to be processed, the information gets sent to a server.
+
+For example, a user types a URL in a client's (e.g. Firefox web browser) 
+address bar and presses "enter". In HTTP terms, this means that the 
+user is requesting to GET the web page associated with the URL. The client 
+looks up the location of the server containing the requested web page, 
+then connects with the server, retrieves the web page, and then displays 
+it.
+
+Web pages are typically built using HTML, CSS, and JS.
 
 *The Domain Name System (DNS)*
 
-TODO
+When a user types in a URL and clicks enter, the domain name first 
+gets sent to domain name servers in order to find the location of the 
+server (IP address) associated with the domain name. One can think of 
+the DNS as a yellow pages book.
 
 ### The Server
-TODO
+The server (e.g. Apache HTTP, Nginx) handles the logic tier of the 
+three-tier architecture. This tier's principle role is to process 
+information and requests sent from the client. 
+
+Web servers are built using server-side web frameworks like Node.js, 
+Django, and Laravel.
 
 ### The Database
 TODO
 
-### The Website Infrastructure
+### The Three-Tier Architecture
 TODO : Insert diagram
 
