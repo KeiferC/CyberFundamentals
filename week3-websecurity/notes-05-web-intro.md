@@ -1,22 +1,29 @@
 # The Web
 
 ### Contents
+[What Is the Web?](#what-is-the-web)
+
+[The Hypertext Transfer Protocol (HTTP)](#the-hypertext-transfer-protocol-http)
+
+[Websites](#websites)
+
+*[Back](../week3-websecurity#week-3---web-security*
 
 
 ## What Is the Web
 
-Servers containing files (e.g. images, text, websites, memes, etc.) and 
-the means of processing and delivering said files.
+Servers containing resources (e.g. images, text, websites, memes, etc.) and 
+the means of processing and delivering said resources.
 
 ### Uniform Resource Locators (URLs)
 
 Uniform Resource Locators (URLs) are a subset of Uniform Resource Identifiers 
-(URIs) that tell clients how to access a file. Because the RFCs suck, there 
+(URIs) that tell clients how to access a resource. Because the RFCs suck, there 
 is often much confusion over what defines a URL vs what defines a URI. At 
 the end of the day, a URI is an identifier (the name of a resource), whereas 
 a URL is a locator (how to get the resource). In other words, URIs standardize 
 the names of files on web servers. URLs standardize the means of obtaining 
-files on a web servers. URLs use the generic URI syntax.
+files on a web server. URLs use the following generic URI syntax.
 
 ```
 Syntax
