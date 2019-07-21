@@ -6,7 +6,11 @@
 
 [Vulnerabilities](#vulnerabilities)
 
-[Tools - Web Proxies]
+[Tools - Web Proxies](#tools---web-proxies)
+
+[Tools - Penetration Testing](#tools---penetration-testing)
+
+[Tools - Playgrounds](#tools---playgrounds)
 
 *[Back](../week3-websecurity#week-3---web-security)*
 
@@ -39,16 +43,17 @@ From OWASP Top 10 - 2017:
 9. Using Components with Known Vulnerabilities
 10. Insufficient Logging and Monitoring
 
-For more details, see the [site](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
+For more details, see the
+[site](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project).
 
 ### CWE/Sans Top 25 Most Dangerous Software Issues
-The 25 errors are broken down into the following three categories:
+The 25 issues are broken down into the following three categories:
 
 1. Insecure Interactions between Components
 2. Risky Resource Management
 3. Porous Defenses
 
-For more details, see the [site](https://www.sans.org/top25-software-errors)
+For more details, see the [site](https://www.sans.org/top25-software-errors).
 
 
 ## Vulnerabilities

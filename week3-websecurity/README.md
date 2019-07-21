@@ -14,3 +14,14 @@
 
 
 ## [Web Security](./notes-06-websec.md#web-security)
+
+[Why Web Security?](./notes-06-websec.md#why-web-security?)
+
+[Vulnerabilities](./notes-06-websec.md#vulnerabilities)
+
+[Tools - Web Proxies](./notes-06-websec.md#tools---web-proxies)
+
+[Tools - Penetration Testing](./notes-06-websec.md#tools---penetration-testing)
+
+[Tools - Playgrounds](./notes-06-websec.md#tools---playgrounds)
+
