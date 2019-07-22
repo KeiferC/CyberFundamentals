@@ -10,7 +10,7 @@
 [The Hypertext Transfer Protocol
 (HTTP)](./notes-05-web-intro.md#the-hypertext-transfer-protocol-http)
 
-[Websites](../notes-05-web-intro.md#websites)
+[Websites](./notes-05-web-intro.md#websites)
 
 
 ## [Web Security](./notes-06-websec.md#web-security)
