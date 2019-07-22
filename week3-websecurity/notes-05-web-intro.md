@@ -61,7 +61,7 @@ looks up the actual IP address that corresponds to the readable string
 (e.g. https://107.20.240.232).
 
 
-## The Hypertext Tranfer Protocol (HTTP)
+## The Hypertext Transfer Protocol (HTTP)
 
 The Hypertext Transfer Protocol is a layer 7 (application) protocol that 
 specifies how data is communicated through the Web. HTTP is a stateless 
