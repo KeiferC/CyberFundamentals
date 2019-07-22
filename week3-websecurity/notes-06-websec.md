@@ -66,7 +66,7 @@ Defense - Create separate users for web apps in order to limit access
 to certain resources and operations (AKA applying the principle of least 
 privilege).
 
-```html
+```php
 <!-- Example -->
 <?php
         $conn = mysql_connect("127.0.0.1", "root", "pass");
@@ -77,9 +77,9 @@ privilege).
 If someone hard-codes their credentials in the code, anyone can get access.
 
 Defense - Don't hard-code credentials. Store credentials in system environment 
-variables/
+variables.
 
-```html
+```php
 <!-- Example -->
 <?php
         $conn = mysql_connect("127.0.0.1", "AzureDiamond", "hunter2");
@@ -101,27 +101,82 @@ alt="hackerman"/>';</script>
 ```
 
 ### SQL Injections (SQLi)
-TODO
+Entering SQL queries into data input fields to access and modify 
+database information. Attack vectors include URL parameters and form 
+fields.
+
+Defense - Sanitize your inputs (e.g. filter out single and double quotes).
+Use prepared statments. Apply the principle of least privilege to database
+access.
+
+```
+# Example URL with SQLi in query parameter
+http://domain-name.com/accounts.php?q='); SELECT * FROM Users WHERE UserId = 105 OR 1=1;-- 
+```
 
 ### Bypassable Input Restrictions
-TODO
+Using web proxies to intercept the HTTP request in order to modify values 
+before using the proxy to send the request to the server. Can be applied 
+on practically all input forms.
 
-*Cookie Tampering*
+Defense - Server-side input validation.
 
-TODO
+*Cookie Tampering*: In order to defend against cookie tamperies, avoid storing 
+important inforamtion (e.g. passwords) and adminstrator checks (bool values) 
+in cookies.
 
 ### Cross-Site Request Forgery (CSRF)
-AKA XSRF, TODO 
+AKA XSRF, manipulating a logged-in user tp execute commands without them 
+knowing. For example, an attacker can use social engineering to get a 
+target to click a legitimate link to a website that they're already 
+logged-in to, yet the url contains parameters that would execute commands.
+
+Defense - Verify same-origin requests, require user interactions for 
+transactions, append unpredicatable challenge tokens to requests.
+
+```
+# Example CSRF URL
+https://legit-domain.com/transfer.do?acct=JOHNCENA&amount=350
+```
 
 ### Traversable Directories
-TODO
+Vulnerability occurs when the server configuration doesn't take into 
+account relative directory traversal sequences (e.g. "../").
+
+Defense - Input validation and proper server configuration.
+
+```
+# Example 
+http://domain.com/../../../../etc/passwd
+```
 
 ### Command Injections
-TODO
+Running system commands (e.g. `ls`, `cat`, `ping`, `chmod`, etc.) on a 
+web server.
+
+Defense - Input validation.
+
+```
+# Example
+http://domain.com/cgi-bin/userData.pl?doc=/bin/ls
+```
 
 ### Remote and Local File Inclusion
-TODO
+Occurs when users can input values without any validation, allowing them 
+to open other files.
 
+Defense - Input validation. Turn off `allow_url_fopen` and `allow_url_include` 
+in `php.ini`)
+
+```
+# Example - Remote File Inclusion
+https://domain.com/index.php?page=https://duckduckgo.com/
+
+# Example - Local File Inclusion
+http://domain.com/index.php?page=/etc/passwd
+```
+
+## In other words, never trust user input!
 
 ## Tools - Web Proxies
 Web proxies intercept HTTP requests and responses so that the attacker 
