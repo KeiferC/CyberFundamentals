@@ -135,9 +135,11 @@ TODO
 ## Websites
 
 In general, the architecture of a website consists of three tiers: 
-the client, the server, and the database.
+the presentation tier, the logic tier, and the data tier. This 
+three-tier architecture is also often referred to as the client / server 
+database architecture.
 
-### The Client
+### Presentation Tier - The Client
 The client (e.g. browser) handles the presentation tier of the
 three-tier architecture. This tier's principle role is to display 
 information (e.g. a web page) to the user. If the client submits 
@@ -152,14 +154,12 @@ it.
 
 Web pages are typically built using HTML, CSS, and JS.
 
-*The Domain Name System (DNS)*
+A note on *the Domain Name System (DNS)*: When a user types in a URL and 
+clicks enter, the domain name first gets sent to domain name servers in 
+order to find the location of the server (IP address) associated with 
+the domain name. One can think of the DNS as a yellow pages book.
 
-When a user types in a URL and clicks enter, the domain name first 
-gets sent to domain name servers in order to find the location of the 
-server (IP address) associated with the domain name. One can think of 
-the DNS as a yellow pages book.
-
-### The Server
+### Logic Tier - The Servers
 The server (e.g. Apache HTTP, Nginx) handles the logic tier of the 
 three-tier architecture. This tier's principle role is to process 
 information and requests sent from the client. When requested, the 
@@ -183,7 +183,7 @@ is referring to web servers.
 Example web servers include Nginx and Apache HTTP. Example frameworks 
 include Node.js and Django.
 
-### The Database
+### Data Tier - The Database
 The database handles the storage of information. The structure of a 
 database in critical to information processing and retrieval.
 
