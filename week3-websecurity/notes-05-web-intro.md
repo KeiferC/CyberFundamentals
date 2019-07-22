@@ -1,20 +1,3 @@
-# The Web
-
-### Contents
-[What Is the Web?](#what-is-the-web)
-
-[The Hypertext Transfer Protocol (HTTP)](#the-hypertext-transfer-protocol-http)
-
-[Websites](#websites)
-
-*[Back](../week3-websecurity#week-3---web-security)*
-
-
-## What Is the Web
-
-Servers containing resources (e.g. images, text, websites, memes, etc.) and 
-the means of processing and delivering said resources.
-
 __Client__: A program running on a computer (e.g. a web browser).
 
 __Server__: A computer running web server software. Delivers information 
@@ -64,7 +47,8 @@ looks up the actual IP address that corresponds to the readable string
 ## The Hypertext Tranfer Protocol (HTTP)
 
 The Hypertext Transfer Protocol is a layer 7 (application) protocol that 
-specifies how data is communicated through the Web.
+specifies how data is communicated through the Web. HTTP is a stateless 
+protocol, meaning that it does not remember session information.
 
 Note: HTTPS is HTTP on a TLS / SSL session.
 
@@ -102,9 +86,18 @@ A HTTP response is a message a server sends to a client in response to a
 HTTP request. It consists of two main components: the HTTP response header 
 and the HTTP response body.
 
-__HTTP Response Header__: TODO
+__HTTP Response Header__: Defines characteristics of that requested data. 
+Contains a status code that provides information about the request.
+- 200: OK
+- 301: Moved Permanently
+- 401: Unauthorized
+- 403: Forbidden
+- 404: Not found
+- 418: I'm a teapot
+- 500: Internal Server Error
 
-__HTTP Response Body__: TODO
+__HTTP Response Body__: Contains the content data being requested (e,g, 
+HTML, text, JSON, etc.)
 
 Example HTTP Response:
 ```
@@ -129,8 +122,30 @@ id="teacup"></div></div></html>
 ```
 
 ### HTTP Cookies
-TODO
+A cookie is a small piece of information in the form of a key-value pair 
+that is sent between the server and the browser in order to retain 
+certain information. It is used for authentication, maintaining states 
+(e.g. preferences, shopping cart items, etc.), and for user tracking. 
 
+Properties:
+- Max size of a cookie: 4 KB.
+- Max number of cookies stored: 300 (max 20 per server / domain)/
+- Can be persistent, lasting longer than the browsing session.
+- Cannot be accessed from another domain than the one that set it, if 
+  the Same-Origin Policy is set.
+- Cookies are set be the server (HTTP response header <Set-Cookie>).
+- Cookies are sent to the server (HTTP request header <Cookie>).
+- Cookies can have expiration dates / times.
+- Cookies are vulnerable to CSRF attacks.
+
+Another kind of data that can be stored on the browser are localStorage 
+values. 
+
+Properties:
+- Max size: 5 MB per domain.
+- Stored data has no expiration date and thus have to be manually cleared.
+- Accessible through JavaScript on the same domain.
+- Vulnerable to XSS attacks.
 
 ## Websites
 
