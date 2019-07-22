@@ -5,12 +5,12 @@
 
 ## [The Web](./notes-05-web-intro.md#the-web)
 
-[What Is the Web?](./notes-05-web-intro#what-is-the-web)
+[What Is the Web?](./notes-05-web-intro.md#what-is-the-web)
 
 [The Hypertext Transfer Protocol
-(HTTP)](./notes-05-web-intro#the-hypertext-transfer-protocol-http)
+(HTTP)](./notes-05-web-intro.md#the-hypertext-transfer-protocol-http)
 
-[Websites](../notes-05-web-intro#websites)
+[Websites](../notes-05-web-intro.md#websites)
 
 
 ## [Web Security](./notes-06-websec.md#web-security)
