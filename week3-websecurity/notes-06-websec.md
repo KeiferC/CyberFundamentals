@@ -119,7 +119,8 @@ Using web proxies to intercept the HTTP request in order to modify values
 before using the proxy to send the request to the server. Can be applied 
 on practically all input forms.
 
-Defense - Server-side input validation.
+Defense - Server-side input validation. Avoid use of hidden values
+(e.g. `<input type"hidden" name="">`) for storing private info.
 
 *Cookie Tampering*: In order to defend against cookie tamperies, avoid storing 
 important inforamtion (e.g. passwords) and adminstrator checks (bool values) 
@@ -176,28 +177,46 @@ https://domain.com/index.php?page=https://duckduckgo.com/
 http://domain.com/index.php?page=/etc/passwd
 ```
 
-## In other words, never trust user input!
+### In other words, never trust user input!
 
 ## Tools - Web Proxies
 Web proxies intercept HTTP requests and responses so that the attacker 
 can modify header fields and bodies. Can also be used to log HTTP traffic.
 
 ### Burp Suite
-TODO
+A graphical tool used for web security. 
+
+Example - modifying values: 
+
+1. Intercept HTTP request after pressing "Go!". 
+2. Change field values under "/Proxy/Intercept/"
+3. Press "Forward"
+
+Site: [portswigger.net](https://portswigger.net/burp/)
 
 ### OWASP Zed Attack Proxy (ZAP)
-TODO
+A Java-based FOSS similar to Burp Suite. Includes a vuln scanner and spiders.
+
+Site: [github.com](https://github.com/zaproxy)
 
 ### Tamper Data
-TODO
+A web proxy add-on for the Firefox web browser.
+
+Site:
+[addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/)
 
 ### mitmproxy
-TODO
+A command-line FOSS web proxy.
+
+Site: [mitmproxy.org](https://mitmproxy.org/)
 
 
 ## Tools - Penetration Testing
 ### sqlmap
-TODO
+A pentesting FOSS that automates the process of detecting and exploiting 
+SQLi flaws.
+
+Site: [sqlmap.org](https://sqlmap.org/)
 
 
 ## Tools - Playgrounds
@@ -210,3 +229,4 @@ DEPLOY THE FOLLOWING WEB APPS!!!
 - [Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/)
 - [Mutillidae](https://sourceforge.net/projects/mutillidae/)
 - [WebGoat](https://www.owasp.org/index.php/Category:OWASP_WebGoat_Project)
+
