@@ -165,13 +165,34 @@ three-tier architecture. This tier's principle role is to process
 information and requests sent from the client. When requested, the 
 server also retrieves information from a database to be processed.
 
-Web servers are built using server-side web frameworks like Node.js, 
-Django, and Laravel.
+Oftentimes, there is confusion regarding the difference between 
+web servers and server-side web frameworks. Both exist in the 
+logic tier and occasionally have overlapping functionalities. In 
+general, a web server handles processes relating to the network, such 
+as load balancing, resource indexing, HTTP protocol management, etc.
+Frameworks are suites of tools used for processing data and requests. 
+One can think of frameworks as used for managing callback functions 
+to user inputs. Both servers and frameworks are needed for a web 
+application. Both are also referred to as servers and thus are mainly 
+distinguished based on the context in which they are referred. When 
+talking about web application functionality and server-side development, 
+one is referring to the processing related to the use of frameworks. 
+When one is talking about web app deployment and DDoS mitigation, one 
+is referring to web servers.
+
+Example web servers include Nginx and Apache HTTP. Example frameworks 
+include Node.js and Django.
 
 ### The Database
-TODO
+The database handles the storage of information. The structure of a 
+database in critical to information processing and retrieval.
+
+Example databases include SQL databases and MongoDB.
 
 ### The Three-Tier Architecture
+In a nutshell, the three-tier architecture involves the presentation tier, 
+the logic tier, and the data tier. 
+
 Source:
 [Wikimedia](https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg)
 
