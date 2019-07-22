@@ -1,3 +1,20 @@
+# The Web
+
+### Contents
+[What Is the Web?](#what-is-the-web)
+
+[The Hypertext Transfer Protocol (HTTP)](#the-hypertext-transfer-protocol-http)
+
+[Websites](#websites)
+
+*[Back](../week3-websecurity#week-3---web-security)*
+
+
+## What Is the Web
+
+Servers containing resources (e.g. images, text, websites, memes, etc.) and 
+the means of processing and delivering said resources.
+
 __Client__: A program running on a computer (e.g. a web browser).
 
 __Server__: A computer running web server software. Delivers information 
