@@ -167,7 +167,7 @@ Occurs when users can input values without any validation, allowing them
 to open other files.
 
 Defense - Input validation. Turn off `allow_url_fopen` and `allow_url_include` 
-in `php.ini`)
+in `php.ini`).
 
 ```
 # Example - Remote File Inclusion
@@ -189,8 +189,8 @@ A graphical tool used for web security.
 Example - modifying values: 
 
 1. Intercept HTTP request after pressing "Go!". 
-2. Change field values under "/Proxy/Intercept/"
-3. Press "Forward"
+2. Change field values under "/Proxy/Intercept/".
+3. Press "Forward".
 
 Site: [portswigger.net](https://portswigger.net/burp/)
 
