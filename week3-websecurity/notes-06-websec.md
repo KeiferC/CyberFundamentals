@@ -2,7 +2,7 @@
 
 ### Contents
 
-[Why Web Security?](#why-web-security?)
+[Why Web Security?](#why-web-security)
 
 [Vulnerabilities](#vulnerabilities)
 
@@ -59,13 +59,46 @@ For more details, see the [site](https://www.sans.org/top25-software-errors).
 ## Vulnerabilities
 
 ### No Principle of Least Privilege
-TODO
+If a server configuration uses root access, anyone who gains root access 
+can do anything they want. 
+
+Defense - Create separate users for web apps in order to limit access 
+to certain resources and operations (AKA applying the principle of least 
+privilege).
+
+```html
+<!-- Example -->
+<?php
+        $conn = mysql_connect("127.0.0.1", "root", "pass");
+?>
+```
 
 ### Hard Coded Credentials
-TODO
+If someone hard-codes their credentials in the code, anyone can get access.
+
+Defense - Don't hard-code credentials. Store credentials in system environment 
+variables/
+
+```html
+<!-- Example -->
+<?php
+        $conn = mysql_connect("127.0.0.1", "AzureDiamond", "hunter2");
+?>
+```
 
 ### Cross-Site Scripting (XSS)
-TODO
+Entering script code into data input fields to be executed on someone's 
+web browser. Allows an attacker to falsify presented content, steal 
+cookie information, inject malicious code, and generally annoy everyone.
+
+Defense - Sanitize your inputs (e.g. change `<` into `&lt;`).
+
+```html
+<!-- Example XSS Payload -->
+<script>window.document.getElementById("SOME-ID").innerHTML='<img
+src="https://i.kym-cdn.com/photos/images/original/001/018/186/b49.gif"
+alt="hackerman"/>';</script>
+```
 
 ### SQL Injections (SQLi)
 TODO
@@ -91,7 +124,8 @@ TODO
 
 
 ## Tools - Web Proxies
-TODO
+Web proxies intercept HTTP requests and responses so that the attacker 
+can modify header fields and bodies. Can also be used to log HTTP traffic.
 
 ### Burp Suite
 TODO
@@ -107,8 +141,6 @@ TODO
 
 
 ## Tools - Penetration Testing
-TODO
-
 ### sqlmap
 TODO
 

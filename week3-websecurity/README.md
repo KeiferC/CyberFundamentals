@@ -15,7 +15,7 @@
 
 ## [Web Security](./notes-06-websec.md#web-security)
 
-[Why Web Security?](./notes-06-websec.md#why-web-security?)
+[Why Web Security?](./notes-06-websec.md#why-web-security)
 
 [Vulnerabilities](./notes-06-websec.md#vulnerabilities)
 
