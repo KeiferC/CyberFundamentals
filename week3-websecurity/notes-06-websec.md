@@ -144,7 +144,8 @@ https://legit-domain.com/transfer.do?acct=JOHNCENA&amount=350
 Vulnerability occurs when the server configuration doesn't take into 
 account relative directory traversal sequences (e.g. "../"). In other
 words, traversal vulnerabilities are a result of improper server 
-configurations.
+configurations. Being able to map out the directory structure of a 
+web app allows the attacker to find attack vectors.
 
 Defense - Input validation and proper server configuration.
 
