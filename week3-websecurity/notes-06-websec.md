@@ -142,7 +142,9 @@ https://legit-domain.com/transfer.do?acct=JOHNCENA&amount=350
 
 ### Traversable Directories
 Vulnerability occurs when the server configuration doesn't take into 
-account relative directory traversal sequences (e.g. "../").
+account relative directory traversal sequences (e.g. "../"). In other
+words, traversal vulnerabilities are a result of improper server 
+configurations.
 
 Defense - Input validation and proper server configuration.
 
@@ -218,6 +220,23 @@ SQLi flaws.
 
 Site: [sqlmap.org](https://sqlmap.org/)
 
+
+### DIRB
+A single-threaded web content scanner, used for discovering directories 
+and files.
+
+Site: [tools.kali.org](https://tools.kali.org/web-applications/dirb)
+
+### DirBuster
+A multi-threaded web content scanner. Similar to DIRB
+
+Site: [tools.kali.org](https://tools.kali.org/web-applications/dirbuster)
+
+### GoBuster
+A web content scanner. Unlike DIRB and DirBuster, is built with Go instead of
+Java.
+
+Site: [github.com](https://github.com/OJ/gobuster)
 
 ## Tools - Playgrounds
 Below is a list containing legal places for practicing web attacks. NEVER 
