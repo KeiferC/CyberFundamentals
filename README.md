@@ -18,11 +18,16 @@
 
 ### [Week 3 - Web Security](./week3-websecurity#week-3---web-security)
 
-[The
-Web](./week3-websecurity/notes-05-web-intro.md#the-web)
+[The Web](./week3-websecurity/notes-05-web-intro.md#the-web)
 
-[Web
-Security](./week3-websecurity/notes-06-websec.md#web-security)
+[Web Security](./week3-websecurity/notes-06-websec.md#web-security)
+
+
+### [Week 5 - Vulnerabilities](./week5-vulnerabilities#week-5---vulnerabilities)
+
+[Disclosing Vulnerabilities](./week5-vulnerabilities/notes-07-vuln-intro.md#disclosing-vulnerabilities)
+
+[Analyzing Vulnerabilities](./week5-vulnerabilities/notes-08-vuln-analysis.md#analyzing-vulnerabilities)
 
 ---
 
