@@ -9,7 +9,7 @@
 
 [What Are Vulnerabilities?](./notes-07-vuln-intro.md#what-are-vulnerabilities)
 
-[Vulnerability Databased](./notes-07-vuln-intro.md#vulnerability-databases)
+[Vulnerability Databases](./notes-07-vuln-intro.md#vulnerability-databases)
 
 
 ## [Analyzing Vulnerabilities](./notes-08-vuln-analysis.md#analyzing-vulnerabilities)

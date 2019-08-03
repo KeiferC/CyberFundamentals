@@ -1,11 +1,13 @@
 # Disclosing Vulnerabilities
 
 ### Contents
-[The Vulnerability Disclosure Problem](#the-vulnerability-discolure-problem)
+[The Vulnerability Disclosure Problem](#the-vulnerability-disclosure-problem)
 
 [What Are Vulnerabilities?](#what-are-vulnerabilities)
 
 [Vulnerability Databases](#vulnerability-databases)
+
+*[Back](../week5-vulnerabilities#week-5---vulnerabilities)*
 
 
 ## The Vulnerability Disclosure Problem

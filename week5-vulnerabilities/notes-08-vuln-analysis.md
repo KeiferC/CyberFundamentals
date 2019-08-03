@@ -7,7 +7,7 @@
 
 [Tools](#tools)
 
-*[Back](../week5-vulnerabilities.md#week-5---vulnerabilities)*
+*[Back](../week5-vulnerabilities#week-5---vulnerabilities)*
 
 
 ## Static Analysis
