@@ -5,7 +5,7 @@
 
 [What Are Vulnerabilities?](#what-are-vulnerabilities)
 
-[Vulnerability Databases](#vulnerability-databases)
+[Vulnerability Collections](#vulnerability-collections)
 
 *[Back](../week5-vulnerabilities#week-5---vulnerabilities)*
 
