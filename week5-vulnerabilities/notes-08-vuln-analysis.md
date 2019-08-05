@@ -27,7 +27,7 @@ paths.
 and each jump / path is an edge.
 
 3. __Taint Analysis (AKA Deterministic Automaton)__: Identifies variables that
-have been tainted and identifies used vulnerable functions (AKA sinks)
+have been tainted and identifies used vulnerable functions (AKA sinks).
 
 4. __Lexical Analysis__: Analyzes the sequence of characters in the code and 
 generates a sequence of tokens representing each unit of information in the code.
@@ -53,17 +53,33 @@ There is no guarantee that dynamic analysis with fully cover the source code.
 ## Tools
 
 ### `nikto`
-// TODO
+`nikto` is an open-source web server scanner designed to find vulnerabilities
+on any type of web server.
+
+```bash
+foo@bar:~$ nikto --host <IP_ADDRESS> # example usage
+```
+
+Documentation: [cirt.net](https://cirt.net/nikto2-docs)
+
+Source code: [github.com](https://github.com/sullo/nikto)
 
 ### Nessus
-// TODO
+A commercial vulnerability scanner. Contains a free version, called [Nessus 
+Home](https://www.tenable.com/products/nessus-home).
 
 ### Open Vulnerability Assessment System (OpenVAS)
-// TODO
+A FOSS fork of Nessus.
 
 ### Metasploit Project
-// TODO
+AKA MSF, the metasploit project (and the metasploit framework), is an 
+open-source platform for developing, testing, and using exploit code. 
+Currently has over 1600 exploits and 400 payloads.
+
+Source: [metasploit.com](https://www.metasploit.com/)
+
+Source Code: [github.com](https://github.com/rapid7/metasploit-framework)
 
 ### JSLint
-// TODO
+A static analysis tool used for finding bugs in JavaScript code.
 
