@@ -96,7 +96,7 @@ __Common Vulnerabilities and Exposures (CVE)__: A dictionary (not a database)
 of common names (i.e. CVE indentifiers) for publicly known cybersecurity 
 vulnerabilities.
 - Free for public download and use
-- CVE ID Syntax: `CVE-<YEAR>-<ARBITRARY_DIGITS> e.g. CVE2014-7654231`
+- CVE ID Syntax: `CVE-<YEAR>-<ARBITRARY_DIGITS> e.g. CVE-2014-7654231`
 - Does not provide proof of concepts (PoC) or exploits
 - Source: [CVE](https://cve.mitre.org)
 - CVE describes the specific vulnerabilities existing in a specific instance
