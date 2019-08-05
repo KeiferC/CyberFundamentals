@@ -29,6 +29,26 @@
 
 [Analyzing Vulnerabilities](./week5-vulnerabilities/notes-08-vuln-analysis.md#analyzing-vulnerabilities)
 
+
+# Hard Problems in Cyber Security and Tech
+- Cyber Attribution
+- Vulnerability Disclosures
+- Privacy and Data Collection
+- Crypto Wars
+- Developer Accountability (Patching)
+- Weak Passwords
+- Defending Against Cyber Attacks (e.g. DDoS, SQLi)
+- Writing Secure Software
+- Writing Accessible Software
+- Sexual Harassment
+- Lack of Diversity
+- Policymaking (Public and Private)
+- Lack of Education / Emphasis on Responsible Development
+- Esoteric Field
+- Information Warfare and Misinformation
+
+Please Read: [The ACM's Code of Ethics](https://www.acm.org/code-of-ethics)
+
 ---
 
 *The Cyber Kill Chain* ([Source](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html))
