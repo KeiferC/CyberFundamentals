@@ -46,6 +46,8 @@
 - Lack of Education / Emphasis on Responsible Development
 - Esoteric Field
 - Information Warfare and Misinformation
+- Weaponization of software and of information
+- Jurisdiction
 
 Please Read: [The ACM's Code of Ethics](https://www.acm.org/code-of-ethics)
 
