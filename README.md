@@ -30,6 +30,11 @@
 [Analyzing Vulnerabilities](./week5-vulnerabilities/notes-08-vuln-analysis.md#analyzing-vulnerabilities)
 
 
+### [Week 6 - Malware](./week6-malware#week-6---malware)
+
+[Malware](./week6-malware/notes-09-malware.md#malware)
+
+
 # Hard Problems in Cyber Security and Tech
 - Cyber Attribution
 - Vulnerability Disclosures
