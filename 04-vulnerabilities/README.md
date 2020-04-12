@@ -1,22 +1,22 @@
-# Week 5 - Vulnerabilities
+# Vulnerabilities
 
-*[Back](https://github.com/KeiferC/cyber-notes#cyber-notes)*
-
-
-## [Disclosing Vulnerabilities](./notes-07-vuln-intro.md#disclosing-vulnerabilties)
-
-[The Vulnerability Disclosure Problem](./notes-07-vuln-intro.md#the-vulnerability-disclosure-problem)
-
-[What Are Vulnerabilities?](./notes-07-vuln-intro.md#what-are-vulnerabilities)
-
-[Vulnerability Collections](./notes-07-vuln-intro.md#vulnerability-collections)
+*[Back](https://github.com/KeiferC/CyberFundamentals#contents)*
 
 
-## [Analyzing Vulnerabilities](./notes-08-vuln-analysis.md#analyzing-vulnerabilities)
+## [Disclosing Vulnerabilities](./00-vuln.md#disclosing-vulnerabilties)
 
-[Static Analysis](./notes-08-vuln-analysis.md#static-analysis)
+[The Vulnerability Disclosure Problem](./00-vuln.md#the-vulnerability-disclosure-problem)
 
-[Dynamic Analysis](./notes-08-vuln-analysis.md#dynamic-analysis)
+[What Are Vulnerabilities?](./00-vuln.md#what-are-vulnerabilities)
 
-[Tools](./notes-08-vuln-analysis.md#tools)
+[Vulnerability Collections](./00-vuln.md#vulnerability-collections)
+
+
+## [Analyzing Vulnerabilities](./01-vuln-analysis.md#analyzing-vulnerabilities)
+
+[Static Analysis](./01-vuln-analysis.md#static-analysis)
+
+[Dynamic Analysis](./01-vuln-analysis.md#dynamic-analysis)
+
+[Tools](./01-vuln-analysis.md#tools)
 

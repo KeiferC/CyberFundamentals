@@ -7,7 +7,7 @@
 
 [Vulnerability Collections](#vulnerability-collections)
 
-*[Back](../week5-vulnerabilities#week-5---vulnerabilities)*
+*[Back](../04-vulnerabilities#vulnerabilities)*
 
 
 ## The Vulnerability Disclosure Problem
@@ -34,7 +34,7 @@ including:
 Therefore, there are several conundrums that a hacker must face when 
 attempting to disclose vulnerabilities:
 
-- Will the vulnerability be patched?
+- Will the vulnerability be patched? If so, when?
 - What are the consequences if the vulnerabilities do not get patched?
 - What are the consequences of disclosing vulnerabilties to others?
 - What to do if the owner of the product containing the vulnerability 
@@ -43,6 +43,7 @@ attempting to disclose vulnerabilities:
 - What pushback may occur from the vulnerability disclosure?
 - Should the vulnerability be disclosed if it is not likely to be patched?
 - What consequences will I face if I disclose this vulnerability?
+- What public disclosure deadline should I set?
 - and more...
 
 If you are having concerns regarding vulnerability disclosures, you may want 
