@@ -20,3 +20,5 @@
 
 [Tools](./01-vuln-analysis.md#tools)
 
+[Technical Risk Assessments](./01-vuln-analysis.md#technical-risk-assessments)
+TODO

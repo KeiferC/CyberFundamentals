@@ -40,14 +40,22 @@
 ### [Forensics](./06-forensics#forensics)
 
 Coming soon
+TODO: steganography, reverse engineering, control flow tracing
 
 
 ### [Embedded Systems Security](./07-embeddedsys#embedded-systems-security)
 
 Coming soon
+TODO: integrated circuits, memory dumping, hardware config
 
 
 ### [Threat Intelligence](./08-threatintel#threat-intelligence)
+
+Coming soon
+TODO: OSINT, Threat modeling, APTs
+
+
+### [Secure by Design](./09-sbd#secure-by-design)
 
 Coming soon
 
