@@ -1,6 +1,6 @@
 # Contents
 
-### [Fundamentals](./00-fundamentals#fundamentals]
+### [Fundamentals](./00-fundamentals#fundamentals)
 
 [An Introduction to Cybersecurity](./00-fundamentals/00-intro.md#an-introduction-to-cybersecurity)
 
