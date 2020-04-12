@@ -94,3 +94,8 @@ __Zero day__: An undisclosed vulnerability that attackers can exploit
 1. Increasing Connectivity
 2. Increasing Extensibility
 3. Increasing Complexity
+
+## Security & Privacy
+TODO: When security and privacy collaborate -- e.g. reduction of OSINT
+TODO: When security and privacy compete -- e.g. HTTPS over TLS -- no 
+verification of endpoint integrity

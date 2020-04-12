@@ -1,4 +1,4 @@
-# Cyber Notes
+# Contents
 
 ### [Week 1 - Networks](./week1-networks#week-1---networks)
 
