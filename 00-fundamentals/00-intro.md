@@ -1,4 +1,4 @@
-# An Introduction to Cyber Security
+# An Introduction to Cybersecurity
 
 ### Contents
 [Basic Definitions](#definitions)
@@ -16,7 +16,7 @@ Increasing?](#the-trinity-of-trouble---why-are-cyber-threats-increasing)
 
 
 ## Definitions
-__Cyber Security__: The CIA Triad
+__Cybersecurity__: The CIA Triad
 - Confidentiality
 - Integrity
 - Availability

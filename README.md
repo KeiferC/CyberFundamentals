@@ -1,38 +1,40 @@
 # Contents
 
-### [Week 1 - Networks](./week1-networks#week-1---networks)
+### [Fundamentals](./00-fundamentals#fundamentals]
 
-[An Introduction to Cyber Security](./week1-networks/notes-00-intro.md#an-introduction-to-cyber-security)
+[An Introduction to Cybersecurity](./00-fundamentals/00-intro.md#an-introduction-to-cybersecurity)
 
-[Basic Networking](./week1-networks/notes-01-networking.md#basic-networking)
+### [Networks](./week1-networks#week-1---networks)
 
-[Network Security](./week1-networks/notes-02-netsec.md#network-security)
+[Basic Networking](./week1-networks/01-networking.md#basic-networking)
 
-
-### [Week 2 - Cryptography](./week2-cryptography#week-2---cryptography)
-
-[Cryptography in a Nutshell](./week2-cryptography#week-2---cryptography/notes-03-crypto-intro.md#cryptography-in-a-nutshell)
-
-[Cryptography and Cyber Security](./week2-cryptography#week-2---cryptography/notes-04-using-crypto.md#cryptography-and-cybersecurity)
+[Network Security](./week1-networks/02-netsec.md#network-security)
 
 
-### [Week 3 - Web Security](./week3-websecurity#week-3---web-security)
+### [Cryptography](./week2-cryptography#week-2---cryptography)
 
-[The Web](./week3-websecurity/notes-05-web-intro.md#the-web)
+[Cryptography in a Nutshell](./week2-cryptography#week-2---cryptography/03-crypto-intro.md#cryptography-in-a-nutshell)
 
-[Web Security](./week3-websecurity/notes-06-websec.md#web-security)
-
-
-### [Week 5 - Vulnerabilities](./week5-vulnerabilities#week-5---vulnerabilities)
-
-[Disclosing Vulnerabilities](./week5-vulnerabilities/notes-07-vuln-intro.md#disclosing-vulnerabilities)
-
-[Analyzing Vulnerabilities](./week5-vulnerabilities/notes-08-vuln-analysis.md#analyzing-vulnerabilities)
+[Cryptography and Cyber Security](./week2-cryptography#week-2---cryptography/04-using-crypto.md#cryptography-and-cybersecurity)
 
 
-### [Week 6 - Malware](./week6-malware#week-6---malware)
+### [Web Security](./week3-websecurity#week-3---web-security)
 
-[Malware](./week6-malware/notes-09-malware.md#malware)
+[The Web](./week3-websecurity/05-web-intro.md#the-web)
+
+[Web Security](./week3-websecurity/06-websec.md#web-security)
+
+
+### [Vulnerabilities](./week5-vulnerabilities#week-5---vulnerabilities)
+
+[Disclosing Vulnerabilities](./week5-vulnerabilities/07-vuln-intro.md#disclosing-vulnerabilities)
+
+[Analyzing Vulnerabilities](./week5-vulnerabilities/08-vuln-analysis.md#analyzing-vulnerabilities)
+
+
+### [Malware](./week6-malware#week-6---malware)
+
+[Malware](./week6-malware/09-malware.md#malware)
 
 
 # Hard Problems in Cyber Security and Tech

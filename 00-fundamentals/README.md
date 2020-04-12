@@ -2,7 +2,7 @@
 
 *[Back](https://github.com/KeiferC/CyberFundamentals#contents)*
 
-## [An Introduction to Cyber Security](./00-intro.md#an-introduction-to-cyber-security)
+## [An Introduction to Cybersecurity](./00-intro.md#an-introduction-to-cybersecurity)
 
 [Basic Definitions](./00-intro.md#definitions)
 
