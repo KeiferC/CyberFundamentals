@@ -4,37 +4,52 @@
 
 [An Introduction to Cybersecurity](./00-fundamentals/00-intro.md#an-introduction-to-cybersecurity)
 
-### [Networks](./week1-networks#week-1---networks)
+### [Networks](./01-networks#networks)
 
-[Basic Networking](./week1-networks/01-networking.md#basic-networking)
+[Basic Networking](./01-networks/00-networking.md#basic-networking)
 
-[Network Security](./week1-networks/02-netsec.md#network-security)
-
-
-### [Cryptography](./week2-cryptography#week-2---cryptography)
-
-[Cryptography in a Nutshell](./week2-cryptography#week-2---cryptography/03-crypto-intro.md#cryptography-in-a-nutshell)
-
-[Cryptography and Cyber Security](./week2-cryptography#week-2---cryptography/04-using-crypto.md#cryptography-and-cybersecurity)
+[Network Security](./01-networks/01-netsec.md#network-security)
 
 
-### [Web Security](./week3-websecurity#week-3---web-security)
+### [Cryptography](./02-cryptography#cryptography)
 
-[The Web](./week3-websecurity/05-web-intro.md#the-web)
+[Cryptography in a Nutshell](./02-cryptography/00-crypto.md#cryptography-in-a-nutshell)
 
-[Web Security](./week3-websecurity/06-websec.md#web-security)
-
-
-### [Vulnerabilities](./week5-vulnerabilities#week-5---vulnerabilities)
-
-[Disclosing Vulnerabilities](./week5-vulnerabilities/07-vuln-intro.md#disclosing-vulnerabilities)
-
-[Analyzing Vulnerabilities](./week5-vulnerabilities/08-vuln-analysis.md#analyzing-vulnerabilities)
+[Cryptography and Cyber Security](./02-cryptography/01-using-crypto.md#cryptography-and-cybersecurity)
 
 
-### [Malware](./week6-malware#week-6---malware)
+### [Web Security](./03-websecurity#web-security)
 
-[Malware](./week6-malware/09-malware.md#malware)
+[The Web](./03-websecurity/00-web.md#the-web)
+
+[Web Security](./03-websecurity/01-websec.md#web-security)
+
+
+### [Vulnerabilities](./04-vulnerabilities#vulnerabilities)
+
+[Disclosing Vulnerabilities](./04-vulnerabilities/00-vuln.md#disclosing-vulnerabilities)
+
+[Analyzing Vulnerabilities](./04-vulnerabilities/01-vuln-analysis.md#analyzing-vulnerabilities)
+
+
+### [Malware](./05-malware#malware)
+
+[Malware](./05-malware/00-malware.md#malware)
+
+
+### [Forensics](./06-forensics#forensics)
+
+Coming soon
+
+
+### [Embedded Systems Security](./07-embeddedsys#embedded-systems-security)
+
+Coming soon
+
+
+### [Threat Intelligence](./08-threatintel#threat-intelligence)
+
+Coming soon
 
 
 # Hard Problems in Cyber Security and Tech
