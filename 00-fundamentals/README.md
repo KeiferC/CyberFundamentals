@@ -1,6 +1,6 @@
 # Fundamentals
 
-*[Back](https://github.com/KeiferC/cyber-notes#contents)*
+*[Back](https://github.com/KeiferC/CyberFundamentals#contents)*
 
 ## [An Introduction to Cyber Security](./00-intro.md#an-introduction-to-cyber-security)
 
