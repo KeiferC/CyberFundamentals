@@ -26,7 +26,7 @@
 
 [A Quick Note on Packet Spoofing](#a-quick-note-on-packet-spoofing)
 
-*[Back](../week1-networks#week-1---networks)*
+*[Back](../01-networks#networks)*
 
 
 ## Ways of Attacking Networks

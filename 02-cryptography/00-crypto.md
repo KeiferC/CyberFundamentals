@@ -13,7 +13,7 @@
 
 [Encryption Algorithms](#encryption-algorithms)
 
-*[Back](../week2-cryptography#week-2---cryptography)*
+*[Back](../02-cryptography#cryptography)*
 
 
 ## Why Cryptography?

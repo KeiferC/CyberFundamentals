@@ -5,7 +5,7 @@
 
 [Password Cracking](#password-cracking)
 
-*[Back](../week2-cryptography#week-2---cryptography)*
+*[Back](../02-cryptography#cryptography)*
 
 
 ## Cryptography and Networks
