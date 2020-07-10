@@ -24,7 +24,7 @@ var samlStrategy = new saml.Strategy(
         issuer: 'saml-poc', // globally unique identifier for app
             // docker config `SIMPLESAMLPHP_SP_ENTITY_ID`
         identifierFormat: null, // format requested from IdP
-        cert: fs.readFileSync(__dirname + 'certs/idp_key.pem', 'utf8'),
+        cert: fs.readFileSync(__dirname + '/certs/idp_key.pem', 'utf8'),
             // public key from IdP
         decryptionPvK: fs.readFileSync(__dirname + '/certs/key.pem', 'utf8'),
             // private decryption key
@@ -96,6 +96,18 @@ app.get('/login',
     passport.authenticate('samlStrategy'), // redirects to IdP
         // posts reponses to `login/callback` handler
         // handler defined in SAML config
+);
+
+// Used for communicating internal details between SP and IdP
+// e.g. sharing app public key
+app.get('/metadata',
+    function (req, res) {
+        res.type('application/xml');
+        res.status(200).send(
+            samlStrategy.generateServiceProviderMetadata(
+                fs.readFileSync(__dirname + '/certs/cert.pem', 'utf8'),
+                fs.readFileSync(__dirname + '/certs/cert.pem', 'utf8')));
+    }
 );
 
 app.post('/login/callback',
