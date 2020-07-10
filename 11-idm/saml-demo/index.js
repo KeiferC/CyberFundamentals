@@ -14,6 +14,7 @@ var app = express();
 
 
 // SAML Setup
+// source: https://github.com/bergie/passport-saml
 var samlStrategy = new saml.Strategy(
     {   // config options here
         callbackUrl: 'http://localhost/login/callback',
@@ -23,6 +24,8 @@ var samlStrategy = new saml.Strategy(
         issuer: 'saml-poc', // globally unique identifier for app
             // docker config `SIMPLESAMLPHP_SP_ENTITY_ID`
         identifierFormat: null, // format requested from IdP
+        cert: fs.readFileSync(__dirname + 'certs/idp_key.pem', 'utf8'),
+            // public key from IdP
         decryptionPvK: fs.readFileSync(__dirname + '/certs/key.pem', 'utf8'),
             // private decryption key
         privateCert: fs.readFileSync(__dirname + '/certs/key.pem', 'utf8'),
