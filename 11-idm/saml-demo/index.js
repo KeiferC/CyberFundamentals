@@ -84,7 +84,32 @@ app.get('/',
     }
 );
 
+app.get('/login',
+    function (req, res, next) {
+        console.log('-----------------------------');
+        console.log('/Start login handler');
+        next(); // calls next handler `passport.authenticate`
+    },
+    passport.authenticate('samlStrategy'), // redirects to IdP
+        // posts reponses to `login/callback` handler
+        // handler defined in SAML config
+);
 
+app.post('/login/callback',
+    function (req, res, next) {
+        console.log('-----------------------------');
+        console.log('/Start login callback ');
+        next();
+    },
+    passport.authenticate('samlStrategy'),
+    function (req, res) {
+        console.log('-----------------------------');
+        console.log('login call back dumps');
+        console.log(req.user);
+        console.log('-----------------------------');
+        res.send('Log in Callback Success');
+    }
+);
 
 
 // Server Setup
