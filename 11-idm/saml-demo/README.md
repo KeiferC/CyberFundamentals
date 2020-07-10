@@ -3,8 +3,9 @@
 Based on [Jeffry Houser's work](https://medium.com/disney-streaming/setup-a-single-sign-on-saml-test-environment-with-docker-and-nodejs-c53fc1a984c9)
 and on the [passport-saml github examples](https://github.com/bergie/passport-saml).
 
-*Note:* Certs are make public in the `cert/` directory for transparency in the
-demo process. Certs are unique to this SP demo implementation.
+*Note:* Certs are make public in the `certs/` directory for transparency in the
+demo process. Certs are unique to this SP demo implementation. Security people
+may find `certs/cert.pem` interesting.
 
 - `certs/cert.pem`: Public SP key
 - `certs/key.pem`: Private SP key
@@ -28,6 +29,7 @@ $ # if the scripts are executable, run `chmod u+x [SCRIPT_FILE]`
 $ ./docker-idp.sh # sets up docker container for IdP
 $       # follow the instructions prompted on the terminal to see how to
 $       # to use the IdP app
+$ # if the certs have expired (900 day lifespan), run `./generate-app-certs.sh`
 ```
 
 - Open http://localhost:8080/simplesaml/module.php/core/frontpage_welcome.php to
