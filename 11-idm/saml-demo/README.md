@@ -25,7 +25,7 @@ $ git fetch origin
 $ git checkout origin/master -- 11-idm/saml-demo
 $ cd 11-dim/saml-demo
 $ npm install
-$ # if the scripts are executable, run `chmod u+x [SCRIPT_FILE]`
+r # if the scripts are not executable, run `chmod u+x [SCRIPT_FILE]`
 $ ./docker-idp.sh # sets up docker container for IdP
 $       # follow the instructions prompted on the terminal to see how to
 $       # to use the IdP app
